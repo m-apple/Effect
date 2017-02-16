@@ -1,23 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="运动效果的添加2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/img/b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/img/m.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/比例.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/比例2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/比例3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/三角.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/事件冒泡.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/保存web格式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/放大镜.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/点击页.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/用键盘控制div移动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/获取按键码.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/获取方向键信息.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/获取鼠标点击的位置.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/magnifying/阻止事件冒泡.html" />
+    <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/buycar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/gao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/主页.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/K24_class.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/K24_class_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/demos.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/jquery-weui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/jquery-weui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/swiper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/weui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/weui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-2.1.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-weui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-weui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper-3.4.1.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper-3.4.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/zepto.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_appointment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_course.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_course_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_most.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_vip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24group.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24vip_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/site.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Effect.iws" />
@@ -43,8 +80,8 @@
       <file leaf-file-name="choose.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/choose.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="692">
+              <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
               <folding>
                 <marker date="1487156381366" expanded="true" signature="1992:2083" placeholder="..." />
               </folding>
@@ -190,7 +227,7 @@
       <updated>1487155536845</updated>
       <workItem from="1487155538506" duration="62000" />
       <workItem from="1487156141643" duration="483000" />
-      <workItem from="1487218848741" duration="2655000" />
+      <workItem from="1487218848741" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="选择文件">
       <created>1487156503347</created>
@@ -220,11 +257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487221190297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="放大镜效果">
+      <created>1487221766973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487221766973</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3200000" />
+    <option name="totallyTimeSpent" value="3550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -248,7 +292,8 @@
     <MESSAGE value="选择文件" />
     <MESSAGE value="运动效果的添加" />
     <MESSAGE value="运动效果的添加2" />
-    <option name="LAST_COMMIT_MESSAGE" value="运动效果的添加2" />
+    <MESSAGE value="放大镜效果" />
+    <option name="LAST_COMMIT_MESSAGE" value="放大镜效果" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -267,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/choose.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="692">
+          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding>
             <marker date="1487156381366" expanded="true" signature="1992:2083" placeholder="..." />
           </folding>

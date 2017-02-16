@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery WeUI</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<link rel="stylesheet" href="css/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/demos.css">
+<style>
+	.onerow {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: #aaa;
+}
+.onerow-text {
+    color: #aaa;
+    margin-left: 10px;
+}
+.onerow-input {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+	margin-left: 10px;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.onerow-input-vetery {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+	margin-left: 10px;
+}
+.vebtn {
+    display: inline-block;
+    padding: 10px 0;
+    background: #1e985b;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    width: 95px;
+}
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #666;
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+.xieyi {
+    color: #aaa;
+    text-align: center;
+}
+.xieyi img {
+    width: 18px;
+    vertical-align: text-bottom;
+}
+.xieyi a {
+    color: #1e985b;
+    text-decoration: underline;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn-block {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background: #1e985b;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.h_hide {
+    display: none;
+}
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    background: #000\9;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=20)\9;
+}
+.daijinma-mask {
+    padding-top: 100px;
+    width: 300px;
+    margin: 0 auto;
+}
+.daijinma-mask .imgbox .textbox {
+    position: absolute;
+    text-align: center;
+    color: #eee;
+    background: url(../images/welcome.png) no-repeat;
+    width: 200px;
+    background-size: 100%;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.daijinma-mask .imgbox .successtext {
+    position: absolute;
+    font-size: 36px;
+    color: #eee;
+    margin-top: 130px;
+    margin-left: 75px;
+}
+.daijinma-mask .imgbox img {
+    width: 100%;
+}
+.daijinma-tobtn {
+    display: block;
+    color: #eee;
+    background: #1e985b;
+    line-height: 50px;
+    text-align: center;
+    margin-top: -10px;
+}
+.radiotext {
+    width: 25%;
+    display: inline-block;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="radio"]:checked + label span {
+    background: url(../images/quan2.png) no-repeat;
+    background-size: 100%;
+}
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/quan.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.onerow {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: #aaa;
+}
+</style>
+</head>
+<body ontouchstart="">
+<div class="container">
+    <div class="box">
+      <h3>月卡VIP福利</h3>
+      <div class="panel">
+        <div class="list">
+	         <div class="item">1、一个月内无时间限制,自由进场。</div>
+	         <div class="item">2、一个月内无次数限制参加公开课。</div>
+        </div>
+      </div>
+    </div>
+
+    <form method="post" id="h-form" enctype="multipart/form-data" action="javascript:;">
+      <div class="box">
+        <h3>会员表格</h3>
+        <div class="panel" style="padding-bottom:20px;padding-top:20px;">
+            <div class="onerow">
+              <span class="onerow-text">手&nbsp;&nbsp;&nbsp;机</span>
+              <input type="text" name="phone" maxlength="11" class="onerow-input required">
+            </div>
+            <div class="onerow">
+              <span class="onerow-text">验&nbsp;&nbsp;&nbsp;证</span>
+              <input type="text" name="vetery" class="onerow-input-vetery required">
+              <button class="vebtn phoneMsg">获取验证码</button>
+            </div>
+            <hr class="gray">
+            <div class="onerow">
+              <span class="onerow-text">姓&nbsp;&nbsp;&nbsp;名</span>
+              <input type="text" name="name" maxlength="6" class="onerow-input required">
+            </div>
+            <div class="onerow">
+              <span class="onerow-text">年&nbsp;&nbsp;&nbsp;龄</span>
+              <input type="text" name="age" maxlength="3" class="onerow-input required">
+            </div>
+            
+            <div class="onerow">
+              <span class="onerow-text">兑奖码</span>
+              <input type="text" name="invite_code" class="onerow-input" placeholder="非必填选项">
+            </div>
+            
+            <hr class="gray">
+            <div class="onerow">
+              <span class="onerow-text" style="margin-right:20px;">性&nbsp;&nbsp;&nbsp;别</span>
+              <input type="radio" class="onerow-radio" name="sex" value="1" id="r1" checked="checked"> 
+              <label for="r1" class="radiotext"><span></span>男</label>
+
+              <input type="radio" class="onerow-radio" name="sex" value="0" id="r2"> 
+              <label for="r2" class="radiotext"><span></span>女</label>
+            </div>
+            
+            <input type="hidden" name="card_id" value="2">
+        </div>
+      </div>
+      <p class="xieyi"><img src="img/gao.png"> 乐炼部落健身房<a href="http://weixin.beiletech.com/index.php/Wechat/Card/opencard.html?cid=2#">用户使用协议</a></p>
+	  
+	  <input type="submit" value="立即办卡，微信付款" class="btn-block">
+    </form>
+
+    <div class="mask h_hide">
+      <div class="daijinma-mask">
+        <div class="imgbox">
+          <span class="textbox">welcome</span>
+          <span class="successtext">开通成功</span>
+          <img src="img/bg.png">
+        </div>
+        <a href="javascript:;" class="daijinma-tobtn">去健身</a>
+      </div>
+    </div>
+  </div>
+<script src="js/index.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script>
+	$('.btn-block').click(function(){
+		$('.mask').removeClass('h_hide');
+	});
+	$('.daijinma-tobtn').click(function(){
+		$('.mask').addClass('h_hide');
+	})
+</script>
+</body>
