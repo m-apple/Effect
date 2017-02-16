@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	ul{ width:510px; margin:100px auto;}
+	ul li{ width:150px; height:150px; margin:10px; float:left; overflow:hidden; position:relative;}
+	ul li img{ width:100%; height:100%;}
+	span{ width:100%; height:100%; position:absolute; top:0; left:200px; opacity:0.5; background:red; color:#FFF; font-size:50px; text-align:center; line-height:150px;}
+</style>
+<script src="move.js"></script>
+<script>
+	function a2d(n){
+		return n*180/Math.PI;
+	}
+	
+	function hoverDir(obj,ev){
+		var X=ev.clientX;
+		var Y=ev.clientY;
+		var Cx=obj.offsetLeft+obj.offsetWidth/2;
+		var Cy=obj.offsetTop+obj.offsetHeight/2;
+		
+		var a=Cy-Y;
+		var b=Cx-X;
+		
+		return (Math.round((Math.atan2(a,b)*180/Math.PI+180)/90))%4;
+	}
+
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var aLi=oBox.children;
+		var aSpan=oBox.getElementsByTagName('span');
+		
+		for(var i=0; i<aLi.length;i++){
+			aLi[i].index=i;
+			aLi[i].onmouseover=function(ev){
+				var oEvent=ev||event;
+				var from=oEvent.fromElement||oEvent.relatedTarget;
+				if(this.contains(from))return;
+				var n=hoverDir(this,oEvent);
+				switch(n){
+					case 0:
+						aSpan[this.index].style.left=200+'px';
+						aSpan[this.index].style.top=0+'px';
+					break;	
+					case 1:
+						aSpan[this.index].style.left=0+'px';
+						aSpan[this.index].style.top=200+'px';
+					break;
+					case 2:
+						aSpan[this.index].style.left=-200+'px';
+						aSpan[this.index].style.top=0+'px';
+					break;
+					case 3:
+						aSpan[this.index].style.left=0+'px';
+						aSpan[this.index].style.top=-200+'px';
+					break;
+				}
+				move(aSpan[this.index],{top:0,left:0});
+			}
+		
+			aLi[i].onmouseout=function(ev){
+				var oEvent=ev||event;
+				var to=oEvent.toElement||oEvent.relatedTarget;
+				if(this.contains(to))return;
+					var n=hoverDir(this,oEvent);
+					switch(n){
+						case 0:
+							move(aSpan[this.index],{top:0,left:200});
+						break;	
+						case 1:
+							move(aSpan[this.index],{top:200,left:0});
+						break;
+						case 2:
+							move(aSpan[this.index],{top:0,left:-200});
+						break;
+						case 3:
+							move(aSpan[this.index],{top:-200,left:0});
+						break;
+					}
+				}
+		}
+	};
+</script>
+</head>
+
+<body>
+	<ul id="box">
+    	<li><img src="img4/1.jpg" /><span>小黄人1</span></li>
+        <li><img src="img4/2.jpg" /><span>小黄2</span></li>
+        <li><img src="img4/3.jpg" /><span>小黄3</span></li>
+        <li><img src="img4/4.jpg" /><span>小黄4</span></li>
+        <li><img src="img4/5.jpg" /><span>小黄5</span></li>
+        <li><img src="img4/6.jpg" /><span>小黄6</span></li>
+        <li><img src="img4/7.jpg" /><span>小黄71</span></li>
+        <li><img src="img4/8.jpg" /><span>小黄8</span></li>
+        <li><img src="img4/9.jpg" /><span>小黄91</span></li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	.box{ width:700px; height:400px;  margin:100px auto; background:url(img/1.jpg); position:relative;}
+	span{ background:url(img/0.jpg); position:absolute;}
+</style>
+<script src="move.js"></script>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		
+		var R=4;
+		var C=7;
+		for(var r=0; r<R; r++){
+			for(var c=0; c<C; c++){
+				var oSpan=document.createElement('span');
+				
+				oSpan.style.width=oBox.offsetWidth/C+'px';
+				oSpan.style.height=oBox.offsetHeight/R+'px';			
+				oSpan.style.top=r*oBox.offsetHeight/R+'px';
+				oSpan.style.left=c*oBox.offsetWidth/C+'px';
+				
+				oSpan.style.backgroundPosition=-c*oBox.offsetWidth/C+'px -'+r*oBox.offsetHeight/R+'px';
+				oBox.appendChild(oSpan);
+				
+				oSpan.r=r;
+				oSpan.c=c;
+			}
+		}
+		
+		var aSpan=oBox.children;
+	
+		oBox.onclick=function(){
+			
+			for(var i=0;i<aSpan.length;i++){
+				(function(index){
+					setTimeout(function(){
+						move(aSpan[index],{opacity:0});
+					},500*(aSpan[index].r+aSpan[index].c));
+				})(i);
+			}
+		}
+		
+	};
+</script>
+</head>
+
+<body>
+	<div id="box" class="box">
+    	
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

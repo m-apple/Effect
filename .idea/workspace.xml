@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="选择文件">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/145.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/146.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/147.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/148.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/90-90.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/ju-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/rond-21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/sheng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/yuan_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/img/zu_9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.idea/h5-zaoju.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Personal_works.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Relation_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Relation_2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Relation_3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Relation_register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/Sign.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/css/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/css/weui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/js/jquery-2.1.4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/js/jquery-weui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5-zaoju/js/swiper.min.js" />
+    <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/shade.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/三角函数.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/zns_demo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/zns_style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/doMove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/分块运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/圆.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/官网效果展示-兼容低版本浏览器.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/苹果菜单.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/鼠标跟随显示.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Effect.iws" />
@@ -205,7 +218,7 @@
       <updated>1487155536845</updated>
       <workItem from="1487155538506" duration="62000" />
       <workItem from="1487156141643" duration="483000" />
-      <workItem from="1487218848741" duration="778000" />
+      <workItem from="1487218848741" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="选择文件">
       <created>1487156503347</created>
@@ -214,11 +227,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487156503347</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="选择文件">
+      <created>1487219664147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487219664147</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1323000" />
+    <option name="totallyTimeSpent" value="2041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -229,10 +249,10 @@
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">

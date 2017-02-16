@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	.box{ width:800px; border:1px solid red; margin:50px auto; height:358px; position:relative; overflow:hidden;}
+	.box ul{ position:absolute; top:50%; height:179px; margin-top:-90px;}
+	.box li{ float:left; width:260px; height:179px; padding:0 10px; position:relative;}
+	.box img{ width:260px; height:179px;}
+	
+	
+	span{ font-size:50px; position:absolute; top:10%; left:30%; color:red; z-index:100;}
+</style>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oUl=oBox.children[0];
+		var aLi=oUl.children;
+		var aImg=oUl.getElementsByTagName('img');
+		
+		
+		//创建的span标签与本效果无关-就是看看
+		for(var i=0; i<aLi.length;i++){
+			var oSpan=document.createElement('span');
+			oSpan.innerHTML=i;
+			aLi[i].appendChild(oSpan);
+		}
+		//获取创建好的span
+		var aSpan=document.getElementsByTagName('span');
+		
+		
+		//设置ul的宽度
+		oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+		
+		//大块的中心点位置 - X
+		var boxC=oBox.offsetWidth/2;
+		
+		var n=3;
+		
+		oUl.onmousedown=function(ev){
+			var oEvent=ev||event;
+			var disX=oEvent.clientX-oUl.offsetLeft;
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+				var l=oEvent.clientX-disX;
+				if(l>boxC-0.5*aLi[0].offsetWidth){
+					l=boxC-0.5*aLi[0].offsetWidth;	
+				}
+				if(l<boxC-(aLi.length-0.5)*aLi[0].offsetWidth){
+					l=boxC-(aLi.length-0.5)*aLi[0].offsetWidth;
+						
+				}
+				
+				oUl.style.left=l+'px';
+				
+				setSize();
+			};
+			document.onmouseup=function(){
+				document.onmousemove=document.onmouseup=null;	
+			};
+			
+			return false;
+		};
+		
+		//设置ul的初始位置
+		oUl.style.left=boxC-(n+0.5)*aLi[0].offsetWidth+'px';
+		
+		setSize();
+		function setSize(){
+			for(var i=0;i<aLi.length;i++){
+				var l=aLi[i].offsetLeft+oUl.offsetLeft+aLi[i].offsetWidth/2;
+				var x=Math.abs(boxC-l);
+				//离得越近 - x越小
+				
+				var scale=1-x/500;
+				scale<0.5&&(scale=0.5);
+				aImg[i].style.width=scale*520+'px';
+				aImg[i].style.height=scale*358+'px';
+				aImg[i].style.marginTop=-(aImg[i].offsetHeight-179)/2+'px';
+				aImg[i].style.marginLeft=-(aImg[i].offsetWidth-260)/2+'px';
+				
+				
+				aSpan[i].innerHTML=scale.toFixed(2);		
+				aLi[i].style.zIndex=scale*100000;
+			}	
+		}
+			
+	};
+</script>
+</head>
+
+<body>
+	<div class="box" id="box">
+    	<ul>
+        	<li><img src="img3/1.jpg" /></li>
+            <li><img src="img3/2.jpg" /></li>
+            <li><img src="img3/3.jpg" /></li>
+            <li><img src="img3/4.jpg" /></li>
+            <li><img src="img3/5.jpg" /></li>
+            <li><img src="img3/6.jpg" /></li>
+            <li><img src="img3/7.jpg" /></li>
+            <li><img src="img3/8.jpg" /></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

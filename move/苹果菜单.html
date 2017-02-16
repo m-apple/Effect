@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	.box{ position:absolute; bottom:0; text-align:center; width:100%;}
+	img{ width:64px;}
+</style>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var aInp=document.getElementsByTagName('input');
+		var aImg=oBox.children;
+		document.onmousemove=function(ev){
+			var oEvent=ev||event;
+			var cX=oEvent.clientX;
+			var cY=oEvent.clientY;
+			
+			for(var i=0;i<aImg.length;i++){
+				var oImgCt=aImg[i].offsetTop+oBox.offsetTop+aImg[i].offsetHeight/2;
+				var oImgCl=aImg[i].offsetLeft+aImg[i].offsetWidth/2;
+				
+				var a=oImgCl-cX;
+				var b=oImgCt-cY;
+				var c=Math.sqrt(a*a+b*b);
+				
+				var scale=1-c/500;
+				if(scale<0.5)scale=0.5;
+				
+				aImg[i].style.width=128*scale+'px';
+				
+				aInp[i].value=scale.toFixed(2);	
+			}
+			
+					
+		};	
+	};
+</script>
+</head>
+
+<body>
+	<input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+
+	<div class="box" id="box">
+    	<img src="img2/1.png" />
+        <img src="img2/2.png" />
+        <img src="img2/3.png" />
+        <img src="img2/4.png" />
+        <img src="img2/5.png" />
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
