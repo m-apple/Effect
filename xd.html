@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+ <meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+
+<title>jQuery滚动页面当DIV到达底部是固定在底部</title>
+
+</head>
+
+<style>
+
+ body{margin:0; padding:0; background:#fff}
+
+div{width:100%;}
+
+</style>
+
+ <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+
+<body>
+<p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+<p>sssssssssssss</p><p>sssssssssssss</p>
+ <div id="menu"style="background:green; height:200px;"></div>
+ <div style="height:200px;"></div>
+ <div id="bottom"style="background:red; height:200px; margin-top:100px;position:fixed;bottom:0;"></div>
+ <script type="text/javascript">
+
+ $(function () {
+
+ $(window).scroll(function () {
+ 
+//alert($('#menu').offset().top);
+if($(window).scrollTop()>400){
+if ($('#bottom').css('display') != 'none') $('#bottom').css({ 'display': 'none' });
+}else{
+if ($('#bottom').css('display') != 'block') $('#bottom').css({ 'display': 'block' });
+}
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
