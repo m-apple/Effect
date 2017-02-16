@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+</style>
+<script>
+	window.onload=function(){
+		document.onkeydown=function(ev){
+			var oEvent=ev||event;
+			//37 左
+			//38 上
+			//39 右
+			//40 下
+			switch(oEvent.keyCode){
+				case 37:
+					alert('左移');
+					break;
+				case 38:
+					alert('上移');
+					break;
+				case 39:
+					alert('右移');
+					break;
+				case 40:
+					alert('下移');
+					break;
+			}
+		}	
+	};
+</script>
+</head>
+
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
