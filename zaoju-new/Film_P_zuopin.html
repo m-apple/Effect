@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/P_reply.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$('.content_L .my a').click(function(){
+			
+			$(this).addClass('cl_22').siblings().removeClass('cl_22');
+		});
+		$('.ul1 li .wod1').hover(function(){
+			$(this).children('.zhezhao').show();
+			$(this).children('.cha').show();
+		},function(){
+			$('.zhezhao').hide();
+			$('.cha').hide();
+		})
+		$('.cha').click(function(){
+			$(this).parent().parent().hide();
+		})
+});
+</script>
+</head>
+
+<body>
+<div class="content pt_165 w_1200 mn clearfix">
+	<div class="content_L le">
+    	<div><img src="img/120.png"  class="ml_75 mt_40 zou_pic"/></div>
+        <div class="my">
+        	<a href="javascript:;" class="cl_0 cl_22">我的作品</a>
+            <a href="javascript:;" class="cl_0">我的展示</a>
+            <a href="javascript:;" class="cl_0">我的关注</a>
+            <a href="javascript:;" class="cl_0">我的参与</a>
+            <a href="javascript:;" class="cl_0">账号设置</a>
+            <a href="javascript:;" class="cl_0">我的认证</a>
+        </div>
+        <div class="content_my_end">
+        	<a href="javascript:;" class="cl_r"><span>退出登录</span></a>
+        </div>
+    </div>
+    <div class="content_R ri">
+    	<div class="my_reply ft_15">
+        	<p class="le ml_45"><span>展示中</span><span class="ml_10">10</span></p>
+            <p class="ri mt_10"><a href="javascript:;" class="fabu">发布</a></p>
+        </div>
+        <div class="p_20"> 
+        	<ul class="ul1 clearfix">
+            	<li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+                </li>
+                <li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+                </li>
+                <li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+                </li>
+                <li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+               </li>
+                <li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+                </li>
+                <li>
+                	<div class="wod1">
+                        <img src="img/bg3.jpg" class="shipin">
+                        <div class="zhezhao dn"></div>
+                        <a href="javascript:;" class="cha dn">×</a>
+                    </div>
+                    <p class="p2">造剧网络有限公司</p>
+                </li>
+            </ul>
+        </div>
+        
+     </div>
+</div>
+</body>

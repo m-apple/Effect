@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/Film_personal_index.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bar ul li').click(function(){
+			
+			$(this).addClass('br_nottom').siblings().removeClass('br_nottom');
+		});
+		$('.cont3_l .cont3_pic').hover(function(){
+			$(this).children('.cont3_l .cont3_pic p').show();
+			$(this).children('.cont3_pic_line').show();
+			$(this).children('.mask').hide();
+		},function(){
+			$(this).children('.cont3_l .cont3_pic p').hide();
+			$(this).children('.cont3_pic_line').hide();
+			$(this).children('.mask').show();;
+		})
+		$('.co_p').hover(function(){
+			$(this).children('.tucen').show();
+		},function(){
+			$(this).children('.tucen').hide();
+		});
+		$('.more').click(function(){
+			$('.cont4').show();
+		})
+});
+</script>
+</head>
+
+<body>
+<div>
+	<div class="one">
+    	<div class="big">
+            <div class="geren_top clearfix">
+                <div class="call le clearfix">
+                    <a href="javascript:;">+关注</a>
+                    <a href="javascript:;">联系TA</a>
+                </div>
+                <div class="con1 ml_20 le">
+                    <div class="work_top clearfix">
+                        <a href="javascript:;" class="top_a1 bor_6">个人</a>
+                        <a href="javascript:;" class="top_a2 bor_r6">企业</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	<div class="one_o"><img src="img/bg3.jpg"></div>
+        <div class="zao">
+        	<div class="tumen clearfix">
+                <div class="dizhi le ml_90">
+                    <div class="div2">
+                        <div class="div1">
+                            <img src="img/bg1.png" class="name">
+                        </div>
+                    </div>
+                    <h3c class="ft_36 cl_f">贵忠军</h3>
+                    <p class="ft_14 cl_f"><span>北京</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>北京市</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>导演</span></p>
+                </div>
+                <div class="show_ren ml_90 le">
+                    <div class="welcome cl_f">WELCOME</div>
+                    <div class="welcome_1 mt_40 f_w6 ft_20 cl_f">一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台一个实现梦想的平台</div>
+                </div>
+                <img src="img/meng_logo.png" class="img_logo ri">
+             </div>
+        </div>
+        
+        <div class="bar">
+                <ul>
+                    <li class="cl_0 br_nottom">
+                        <a href="">
+                            <p class="mt_10">
+                                TA的作品<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Portfolio
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#bgt">
+                            <p class="mt_10">
+                                图片剧照<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Photo
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont5">
+                            <p class="mt_10">
+                                合作盟友<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Ally
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont6">
+                            <p class="mt_10">
+                                关注/粉丝<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Attention/Fan
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont6">
+                            <p class="mt_10">
+                                联系方式<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Contact
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    
+</div>
+</body>
+</html>

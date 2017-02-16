@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol{padding:0;}
+*{margin:0;padding:0;}
+body{ width:100%;font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.bg{background:red;}
+.bg_b{background:blue;}
+.bg_g{background:green;}
+.bg_y{background:yellow;}
+.w_310{width:310px;}
+.w_300{width:300px;}
+.h_34{height:34px;}
+.br_b{border:1px solid #22b9fb;}
+.bu{border-radius:4px;}
+.mt_10{margin-top:10px;}
+.bg_2{background:#22b9fb;}
+.cl_22{color:#22b9fb;}
+
+
+.header_1{width:100%;height:200px;color:#fff;padding-top:66px;background:#000;}
+.header_1_m{width:1200px;height:200px;margin:0 auto;background:#000;}
+.header_1 .left{float:left;}
+.header_1 .left h4{font-size:30px;padding-left:75px;padding-top:70px;font-size:30px;}
+.header_1 .left p{font-size:30px;padding-left:75px;font-size:18px;margin-top:15px;}
+.header_1 .right {float:right;}
+.header_1 .right .top{padding-top:70px;}
+.header_1 .right .top a{display:block;width:53px;height:53px;border-radius: 50%;float:left;margin-left:27px;}
+ 
+.content{width:1200px;min-width:960px;margin:0 auto;margin-top:20px;}
+.content .advertisement ul{min-width:960px;}
+.content .advertisement li{width:230px;height:99px;background:#fff;float:left;margin-left:12px;margin-top:10px;}
+.content .advertisement .ml{margin-left:0;}
+.bottom{margin-top:17px;width:296px;margin-left:27px;}
+.bottom  .line{margin:0 auto;height:22px;text-align:center;}
+.bottom .line .mid{padding:0 10px;width:160;font-size:16px;color:#9a9a9a;}
+.bottom .line .lin{width:66px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+
+/*内容2*/
+.content_2{width:1200px;margin:0 auto;padding-top:10px;}
+.film{width:284px;height:160px;}
+.film .time{right:5px;bottom:5px;}
+.content_2 .con_two{max-width:1200px;min-width:960px;width:100%;margin:0 auto;}
+.content_2 .con_two .film img{width:100%;height:100%;}
+.content_2 .con_two .film{position:relative;}
+.content_2 .con_two .film span i{font-style:normal;color:#fff;opacity:1;}
+.content_2 .con_two .film span{display:block;background-color:#000;opacity:0.8;width:38px;height:18px;font-size:10px;line-height:18px;text-align:center;position:absolute;right:5px;bottom:8px;color:#fff;}
+.content_2 .con_two .explain{background:#fff;height:63px;width:100%;box-shadow: 0px 1px 1px 1px #c2c2c2;}
+.content_2 .con_two .explain p{font-size:14px;}
+.content_2 .con_two ul{width:1200px;margin:0 auto;}
+.content_2 .con_two li{float:left;width:284px;padding-left:20px;height:225px;padding-top:20px;}
+.content_2 .con_two li p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;margin-left:10px;padding-right:4px;padding-top:10px;}
+.content_2 .con_two li .th_user{text-align:left;height:20px;font-size:12px;margin-left:10px;margin-top:8px;}
+.content_2 .con_two li .th_user span{display:block;float:left;line-height:20px;}
+.content_2 .con_two li .th_user .sp{margin-left:5px;color:#999;}
+.content_2 .con_two li .th_user .sp img{vertical-align:bottom;margin-bottom:3px;}
+
+
+/*分页*/
+.tYpe{width:1200px;height:121px;margin-top:10px;}
+.tYpe .t_t{height:89px;background:#fff;}
+.tYpe .t_t li{float:left;height:89px;}
+.tYpe .t_t li a{padding-left:20px;line-height:45px;font-size:14px;}
+.tYpe .t_t li .active{color:#22b9fb;}
+.tYpe .t_t .li1{padding-left:17px;width:169px;}
+.tYpe .t_t .li1_end{padding-left:0;}
+.tYpe .t_b{height:32px;background:#fafafa;text-align:center;line-height:32px;}
+.tYpe .t_b a{color:#b0b0b0;}
+.tYpe .t_t .li2{padding-left:145px;width:186px;}
+.tYpe .t_t .li3{padding-left:76px;width:368px;}
+.tYpe .t_t .li4{padding-left:85px;width:219px;}
+
+.Page{padding-top:65px;}
+.Page .num{width:355px;margin:0 auto;}
+.Page .num_1{margin-left:13px;}
+.Page .num_1:hover{background:none;}
+.Page a{display:block;width:24px;height:24px;font-size:16px;color:#989898;float:left;text-align:center;line-height:24px;margin-right:3px;border-radius:3px;}
+.Page .ss{background:#21b9fd;color:#fff;}
+.Page .ye:hover{background:#ccc;color:#fff;}
+.Page .ss:hover{background:#21b9fd;color:#fff;}
+
+

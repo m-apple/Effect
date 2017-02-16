@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol,{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#999;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.mn{margin:0;}
+.cl{color:#fff;}
+.bg{background:red;}
+.bg_b{background:blue;}
+.bg_g{background:green;}
+.bg_y{background:yellow;}
+.bg_2{background:#22b9fb;}
+.bg_h{background:#000;}
+.op{opacity:0.5;}
+.w{width:100%;}
+.h{height:100%;}
+.pb{position:absolute;}
+.w_125{width:125px;}
+.w_158{width:158px;}
+.w_300{width:300px;}
+.w_310{width:310px;}
+.h_34{height:34px;}
+.br_b{border:1px solid #22b9fb;}
+.br_9{border:1px solid #999;}
+.br_r{border:1px solid red;}
+.bu{border-radius:4px;}
+.mt_10{margin-top:10px;}
+.mt_18{margin-top:18px;}
+.mt_6{margin-top:6px;}
+.mr_6{margin-right:6px;}
+.pl{padding-left:10px;}
+.mtl_10{margin:10px 0;}
+.ft_15{font-size:15px;}
+.ft_12{font-size:12px;}
+
+/*登录页*/
+.sign{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;}
+.sign .sign_content{width:310px;height:100%;margin:0 auto;}
+.sign .sign_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.sign .line{margin:0 auto;height:22px;text-align:center;}
+.sign .line .mid{padding:0 10px;width:170px;font-size:16px;}
+.sign .line .lin{width:60px;height:10px;border-bottom:1px solid #333;}
+
+.sign .forward a{display:block;width:42px;height:42px;border-radius:50%;float:left;margin-right:30px;margin-top:20px;margin-bottom:30px;}
+
+.sign .verification{padding-top:10px;padding-bottom:2px;color:red;height:33px;}
+.sign .verification span{display:none;}
+.sign .verification img{padding-right:5px;}
+.sign .pull_left input{width:288px;height:34px;border-radius:3px;margin-top:10px;font-size:16px;padding-left:10px;；border:1px solid #999;border:none;border:1px solid #999;}
+.sign .remember{padding:15px 0;}
+.sign .remember .me{float:left;height:14px;line-height:14px;}
+.sign .remember a{float:right;font-size:14px;}
+.sign .remember .me img{display:block;float:left;}
+.sign .remember span{display:block;height:14px;float:left;font-size:14px;}
+
+.sign .sign_content .sign_btn{display:block;width:310px;height:36px;text-align:center;line-height:36px;background:#bebebe;border-radius:6px;font-size:15px;color:#fff;}
+.sign .account{text-align:center;padding-top:20px;}
+.sign .account a{color:#22b9ff;}
+
+/*注册页*/
+.enroll{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;display:none;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;}
+.enroll .enroll_content{width:310px;height:100%;margin:0 auto;}
+.enroll .enroll_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.enroll .pull_left{padding-bottom:205px;}
+.enroll input{height:36px;border-radius:3px;border:none;border:1px solid #21b8fd;width:286px;padding-left:10px;font-size:14px;}
+.enroll button{width:310px;height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+.enroll .line{margin:0 auto;height:22px;text-align:center;padding-bottom:35px;}
+.enroll .line .mid{padding:0 10px;width:170px;font-size:16px;color:#9a9a9a;}
+.enroll .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+.enroll .agreement{line-height:14px;text-align:center;margin-top:19px;font-size:13px;}
+.enroll .agreement a{color:#21b8fd;}
+
+
+/*完善信息页*/
+.perfect{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.perfect .perfect_content{width:302px;height:100%;margin:0 auto;}
+.perfect .perfect_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.perfect input{height:36px;margin-top:10px;}
+.perfect button{height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.perfect .line{margin:0 auto;height:22px;text-align:center;}
+.perfect .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.perfect .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.perfect .code{width:320px;text-align:center;line-height:25px;font-size:14px;}
+.perfect .code a{color:#21b8fd;}
+.perfect .perfect_verification{color:red;}
+.perfect .perfect_verification span{display:block;font-size:12px;}
+.perfect .perfect_verification img{padding-right:5px;}
+
+.perfect .perfect_agreement{line-height:14px;padding:5px 0;}
+.perfect .perfect_agreement img{float:left;padding-right:10px;}
+.perfect .perfect_agreement p{float:left;}
+.perfect .perfect_agreement p a{color:#21b8fd;}
+
+/*关联页*/
+.ralation{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.ralation .ralation_content{width:302px;height:100%;margin:0 auto;}
+.ralation .ralation_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.ralation .ralation_header_pic{width:120px;height:120px;margin:0 auto;margin-top:30px;padding-bottom:10px;}
+.ralation .ralation_header_pic img{width:100%;height:100%;}
+.ralation .ralation_content p{text-align:center;font-size:16px;color:#222;}
+.ralation .ralation_content .gl{padding-top:36px;}
+
+.ralation button{width:300px;height:34px;margin-top:10px;background:#21b9fd;border:1px solid #21b9fd;border-radius:3px;border:none;font-size:15px;color:#fff;}
+
+/*注册信息页*/
+.register{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.register .register_content{width:310px;height:100%;margin:0 auto;}
+.register .register_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.register .re{height:36px;margin-top:10px;}
+.register button{height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.register .line{margin:0 auto;height:22px;text-align:center;}
+.register .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.register .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.register .register_verification{padding-top:10px;padding-bottom:10px;color:red;height:16px;}
+.register .register_verification span{display:block;line-height:16px;}
+.register .register_verification img{padding-right:5px;}
+
+.register .register_agreement{line-height:14px;}
+.register .register_agreement img{float:left;padding-right:10px;}
+.register .register_agreement p{float:left;}
+.register .register_agreement p a{color:#21b8fd;}
+
+
+/*注册信息页-用于关联页跳转*/
+.Login{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.Login .Login_content{width:310px;height:100%;margin:0 auto;}
+.Login .Login_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.Login input{height:36px;margin-top:10px;}
+.Login button{height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.Login .line{margin:0 auto;height:22px;text-align:center;}
+.Login .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.Login .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.Login .Login_verification{padding-top:10px;padding-bottom:10px;color:red;height:40px;}
+.Login .Login_verification span{display:block;}
+.Login .Login_verification img{padding-right:5px;}
+
+.Login .Login_agreement{line-height:14px;}
+.Login .Login_agreement img{float:left;padding-right:10px;}
+.Login .Login_agreement p{float:left;}
+.Login .Login_agreement p a{color:#21b8fd;}
+
+/*忘记密码*/
+.forget{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.forget .forget_content{width:302px;height:100%;margin:0 auto;}
+.forget .forget_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.forget .pull_left{padding-bottom:205px;}
+.forget input{height:36px;border-radius:3px;border:none;border:1px solid #21b8fd;width:286px;padding-left:10px;font-size:14px;}
+.forget button{width:300px;height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.forget .line{margin:0 auto;height:22px;text-align:center;}
+.forget .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.forget .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.forget  .forget_verification{color:red;line-height:12px;padding:10px 0;}
+.forget  .forget_verification span{display:block;font-size:12px;}
+.forget  .forget_verification img{padding-right:5px;vertical-align: middle;}
+
+.forget  .forget_agreement{line-height:14px;text-align:center;margin-top:19px;font-size:13px;}
+.forget  .forget_agreement a{color:#21b8fd;}
+
+
+/*重置密码页*/
+.Reset{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;display:none;}
+.Reset .Reset_content{width:302px;height:100%;margin:0 auto;}
+.Reset .Reset_logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.Reset input{height:36px;margin-top:10px;}
+.Reset button{height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.Reset .line{margin:0 auto;height:22px;text-align:center;}
+.Reset .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.Reset .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.Reset .code{width:320px;text-align:center;line-height:25px;font-size:14px;}
+.Reset .code a{color:#21b8fd;}
+.Reset .Reset_verification{color:red;}
+.Reset .Reset_verification span{display:block;font-size:12px;}
+.Reset .Reset_verification img{padding-right:5px;}
+
+.agreement{line-height:14px;padding:5px 0;}
+.Reset_agreement img{float:left;padding-right:10px;}
+.Reset_agreement p{float:left;}
+.Reset_agreement p a{color:#21b8fd;}
+
+
+.close{position:absolute;right:10px;top:10px;}
+

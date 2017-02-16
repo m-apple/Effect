@@ -2,59 +2,314 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/bg_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/buycar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/gao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/img/主页.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/K24_class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/K24_class_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/demos.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/jquery-weui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/jquery-weui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/swiper.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/weui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/css/weui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-1.7.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-2.1.4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-weui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery-weui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper-3.4.1.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper-3.4.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/swiper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/js/zepto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_appointment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_course.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_course_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_index_2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_most.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24_vip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/k24vip_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K24/site.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/css.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/-101.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/10 (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/101.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/102.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/103.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/104.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/105.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/106.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/107.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/108.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/109.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/110.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/1111.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/112.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/113.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/122.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/127.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/131.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/132.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/140.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/141.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/142.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/143.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/145.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/146.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/147.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/148.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/149.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/150.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/151.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/153.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/154.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/155.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/156.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/157.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/176.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/17fan1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/17fan2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/20-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/21-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/21-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/552cc15b74087_128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/552cc1e587668_128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/654620.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/87.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/89.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/90-90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/9027.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/91 (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/91.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/92.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/93.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/94.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/95.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/98.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/99.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/A0548B9630772BE8A9FAC5A0E574E0AE.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/LOGO-width2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/LOGO.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/LOGO_break.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/SHOW+.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/aiqiyi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/aiqiyi1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/baidu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/baidu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bg3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/bjt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/ellipse .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/ellipsis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/envelope .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/erall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/erwima-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/erwima-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/fund-09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/group .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/guanggao_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/huawei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/huawei1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/huazhicheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/huazhicheng1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/ju-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/junlebao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/junlebao1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/juxing_42.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/juxing_43.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/jz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/laba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/meituan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/meituan1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/meng_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/my.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/p_149.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/rond-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/rond-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/rond-21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sanjiao -_zuo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sanjiao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sl-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sl3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/sl4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/speak.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/t-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/t.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/ta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tianhai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tianhai1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/tu-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/v_11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/va.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/white-logo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/white-logo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/xiecheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/xiecheng1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/yklogo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/yklogo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/yuan_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-1-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-108.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-109.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/z-165.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zaoj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zhezhao .png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zjrz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu-100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu-114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu-115.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu-98.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu-99.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_116.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_117.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_118.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_119.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_121.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_122.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_123.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/img/zu_124.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/999.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_guanzhu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_pic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_renzheng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_renzheng_geren.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_shanchuan_zuopin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_shangchuan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_P_zuopin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_chuangjian_pic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_liebiao.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_personal_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_personal_liuyan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_shangchuan_pic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Film_works.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Fim_company.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_Center.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_Center_xitong.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_Set_tel1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_Set_tel2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_account .html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_account-xiugai.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_answer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_answer_huifu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_banquan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_callme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_changjain.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_fuwu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_guanyu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_partake.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_reply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_schedule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_shangchuan_shipin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_shouquan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_spec.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_tishi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_women.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_zhanghao.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/P_zhiyin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Reset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/Sign.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/come.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Film_P_shanchuan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Film_index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Film_personal_index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Film_works.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_Center.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_Center_xitong.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_Set_tel1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_Set_tel2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_account.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_account_xiugai.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_answer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_answer_huifu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_guanyu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_partake.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_reply.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_schedule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_shouquan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_tishi.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_zhanghao.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/P_zhiyin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/Sign.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/alert-style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/datails_series.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/datails_series_2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/details_mu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/details_style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/enroll.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/forget_1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/perfect.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_complete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_details.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_enterprise.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_liebiao.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_muhou.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/recruit_upload.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/register.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/relation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/renzheng.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/search.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/shangchuan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/show+.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/swiper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/tupian.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/uploadifive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/zaoju_jijin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/css/zzsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/datails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/datails_mu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/datails_series.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/datails_series_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/enroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/forget_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/jquery-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/jquery.uploadifive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/slide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/swiper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/zaoju.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/zzc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/js/zzsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/perfect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_complete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_datails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_enterprise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_liebiao.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_muhou.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/recruit_upload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/relation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/renzheng_company.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/renzheng_personal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/shangchuan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/show+.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/tupian.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/zaoju-new.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zaoju-new/zaoju_jijin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Effect.iws" />
@@ -227,7 +482,7 @@
       <updated>1487155536845</updated>
       <workItem from="1487155538506" duration="62000" />
       <workItem from="1487156141643" duration="483000" />
-      <workItem from="1487218848741" duration="3005000" />
+      <workItem from="1487218848741" duration="3339000" />
     </task>
     <task id="LOCAL-00001" summary="选择文件">
       <created>1487156503347</created>
@@ -264,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487221766973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="K24健身房项目">
+      <created>1487222158868</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487222158868</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3550000" />
+    <option name="totallyTimeSpent" value="3884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -293,7 +555,8 @@
     <MESSAGE value="运动效果的添加" />
     <MESSAGE value="运动效果的添加2" />
     <MESSAGE value="放大镜效果" />
-    <option name="LAST_COMMIT_MESSAGE" value="放大镜效果" />
+    <MESSAGE value="K24健身房项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="K24健身房项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

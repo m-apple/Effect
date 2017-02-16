@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol,{padding:0;}
+*{margin:0;padding:0;}
+body{width:100%;font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#f2f2f2;}
+a{ text-decoration:none; color:#21b9fd;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+
+/*公共样式*/
+
+.mn{margin:0 auto}
+.ds{display:block;}
+.dn{display:none;}
+.bg{background:red;}
+.bg_b{background:blue;}
+.bg_g{background:green;}
+.bg_y{background:yellow;}
+.br_h{border:1px solid #ededed;}
+.br_n{border:0px;}
+.c_bw{background:#22b9fd;color:#fff;}
+.c_bf{background:#f5f5f5;color:#989898;}
+.txt{text-align:center;}
+.br{border-radius:3px;}
+.bs_r{box-shadow: 0px 4px 11px rgba(0,0,0,0.2);}
+.mr_30{margin-right:30px;}
+.mt_20{margin-top:20px;}
+.mt_30{margin-top:30px;}
+.mt_35{margin-top:35px;}
+.mt_10{margin-top:10px;}
+.mt_5{margin-top:5px;}
+.mt_15{margin-top:15px;}
+.mt_50{margin-top:50px;}
+.mt_40{margin-top:40px;}
+.ml_5{margin-left:5px;}
+.ml_10{margin-left:10px;}
+.ml_12{margin-left:12px;}
+.ml_15{margin-left:15px;}
+.ml_20{margin-left:20px;}
+.ml_25{margin-left:25px;}
+.ml_50{margin-left:50px;}
+.ml_50{margin-left:278px;}
+.ml_45{margin-left:45px;}
+.ml_60{margin-left:60px;}
+.ml_30{margin-left:30px;}
+.ml_278{margin-left:278px;}
+.ml_135{margin-left:135px;}
+.mb_10{margin-bottom:10px;}
+.mb_30{margin-bottom:30px;}
+.pb_98{padding-bottom:98px;}
+.pb_60{padding-bottom:60px;}
+.pl_10{padding-left:10px;}
+.pt_165{padding-top:165px;}
+.pt_30{padding-top:30px;}
+.pr_10{padding-right:10px;}
+.pr_45{padding-right:45px;}
+.p_20{padding:0 20px;}
+.cl_5a{color:#5aff5b}
+.cl{color:#2bff2b}
+.cl_6{color:#666}
+.cl_9{color:#999}
+.cl_0{color:#000}
+.cl_r{color:red}
+.cl_8{color:#22b8fb}
+.cl_r{color:#fff}
+.ft_14{font-size:14px;}
+.ft_15{font-size:15px;}
+.ft_16{font-size:16px;}
+.ft_18{font-size:18px;}
+.ft_20{font-size:20px;}
+.ft_12{font-size:12px;}
+.ft_b{font-weight:bold;}
+.w_846{width:846px;}
+.w_230{width:230px;}
+.w_60{width:60px;}
+.w_290{width:290px;}
+.w_100{width:100px;}
+.w_145{width:145px;}
+.w_710{width:710px;}
+.h_36{height:36px;}
+.h_100{height:100px;}
+.h_30{height:30px;}
+.h_60{height:60px;}
+.h_80{height:80px;}
+.f_w6{font-weight:600;}
+.text_45{text-indent:-45px;}
+.out_line{outline:none;}
+.ver_mid{vertical-align: middle;}
+
+.one{width:100%;height:900px;position:relative; overflow: hidden;}
+.one_o{width:100%;height:900px;}
+.one_n{position:absolute;left:0;top:0;height: 100%;overflow: hidden;}
+.one_e{position:absolute;left:0;bottom:0;}
+.one_o img{width:100%;height:100%;}
+.show_ren{width:1200px;margin:auto;text-align: left;    position: relative;}
+.zao{width:100%;position:absolute;left:0;bottom:30%;}
+.show_ren .SHOW{
+	position: absolute;
+    left: 0;
+    bottom: 156px;
+}
+.show_ren .vl{
+	padding-top:30px; 
+	transition: all 1s;
+	position: absolute;
+    left: 0;
+    bottom: 35px;
+}
+.show_ren .zaoju{
+	padding-top:20px; 
+	transition: all 1s;  
+  	position: absolute;
+    left: 0;
+    bottom: -3px;}
+.liji{width:1200px;text-align:left;margin:auto;padding-top:30px;position: relative;}
+.liji .shenq{
+	display:block;
+	width:200px;
+	height:68px;
+	border:1px solid #fff;
+	color:#fff;
+	text-align:center;
+	line-height:68px;
+	font-size:30px;
+	border-radius: 3px;    
+	position: absolute;
+    left: 0;
+    top: 16px;
+}
+.liji .shenq:hover{background:#22b8fd;border:1px solid #22b8fd;}
+.ju{width:100%;height:960px;background:#000;color:#fff;}
+.ju .ju_s{width:1200px;margin:auto;}
+.ju .ju_s h2{font-size:34px;text-align:center;}
+
+.ju_zuo{width:515px;}
+.ju_zuo p{line-height:25px;font-size:14px;}
+
+
+.work{width:100%;height:1920px;background:url(../img/654620.png) center;}
+.work_top{margin:auto;height:100px;width: 400px;padding-top: 40px;}
+.work_top a{display:block;float:left;width:200px;height:60px;border:1px solid #22b8fd;line-height:60px;text-align:center;box-sizing: border-box;font-size:21px;}
+.bor_6{border-radius:6px 0 0 6px;}
+.bor_r6{border-radius:0 6px 6px 0;}
+.top_a1{background:#22b8fd;font-weight:600;color:#fff;}
+.top_a2{font-weight:600;color:#000;}
+.work .peo{width:1140px;height:1260px;border:20px solid #79ccf4;background:#fff;margin:auto;padding: 0 20px;}
+
+.work .peo .tex{resize: none;width:1120px;max-width:1120px;height:180px;outline:none;border-radius:10px;padding:10px 10px;border:1px solid #ededed;}
+.wenjian{}
+.cail a{display:block;width:70px;height:70px;line-height:70px;text-align:center;border:2px dashed #aaa;background:#fafafa;font-size:14px;color:#9a9a9a;float:left;}
+.tex::-webkit-input-placeholder {text-align: center;padding-top:110px}
+
+.peo .tijiao{display:block;width:280px;height:35px;line-height:35px;text-align:center;color:#fff;background:#22b8fd;    border-radius: 4px; margin: auto;margin-top: 40px;box-shadow:  0px 2px 7px 2px  #cfcfcf;}
+.peo .tijiao:active{box-shadow:  0px 0px 0px 0px;}
+
+
+.d1{
+animation: myfirst 0.5s;
+-moz-animation: myfirst 0.5s;	/* Firefox */
+-webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
+-o-animation: myfirst 0.5s;	/* Opera */
+}
+.d2{
+animation: myconten 0.3s;
+-moz-animation: myconten 0.3s;	/* Firefox */
+-webkit-animation: myconten 0.3s;	/* Safari 和 Chrome */
+-o-animation: myconten 0.3s;	/* Opera */
+}
+.d3{
+animation: myone 1s;
+-moz-animation: myone 1s;	/* Firefox */
+-webkit-animation: myone 1s;	/* Safari 和 Chrome */
+-o-animation: myone 1s;	/* Opera */
+}
+.d4{
+animation: mytwo 2s;
+-moz-animation: mytwo 2s;	/* Firefox */
+-webkit-animation: mytwo 2s;	/* Safari 和 Chrome */
+-o-animation: mytwo 2s;	/* Opera */
+}
+.d5{
+animation: mythree 4.5s;
+-moz-animation: mythree 4.5s;	/* Firefox */
+-webkit-animation: mythree 4.5s;	/* Safari 和 Chrome */
+-o-animation: mythree 4.5s;	/* Opera */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

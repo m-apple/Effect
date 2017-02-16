@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";}
+a{ text-decoration:none; color:#666666;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";}
+a{ text-decoration:none; color:#666666;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+	.news{width:325px;height:438px;background:#fff;margin:auto;padding-top:10px;}
+	.news_a{width:199px;height:24px;border-radius:8px;background:#f4f5f9;margin:auto;padding:3px 3px;margin-bottom:10px;}
+	.news_a a{display:block;float:left;width:99px;height:23px;line-height:23px;text-align:center;}
+	.cl_999{color:#999;}
+	.cl_0{color:#000;}
+	.cl_22{color:#22b8fd;}
+	.mt_10{margin-top:10px;}
+	.bg_000{background:#fff;color:#000;border-radius:8px;}
+	.news_b{width:100%;}
+	.news_b_t{width:50px;height:50px;position:relative;margin-right:10px;}
+	.news_b li{height:50px;padding:10px 10px;}
+	.news_b li:hover{background:#ccc;}
+	.news_b_img{width:50px;height:50px;border-radius:50%;}
+	.news_b_img1{width:20px;height:20px;border-radius:50%;position:absolute;bottom:0;right:0;}
+	.news_b_p{width:158px;}
+	.news_b_p span{display:block;  width: 56px;float: left;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+	.ft_14{font-size:14px;}
+	.news_c{width:100%;height:48px;background:#f4f5f9;text-align:center;line-height:48px;cursor: pointer;}
+</style>
+<script>
+	$('.news .news_a a').click(function(){
+		$(this).addClass('bg_000').siblings().removeClass('bg_000');
+	})
+</script>
+</head>
+
+<body style="background:#ededed;">
+<div class="news">
+	<div class="news_a">
+    	<a href="javascript:;" class="cl_999 bg_000">消息</a>
+        <a href="javascript:;" class="cl_999">留言</a>
+    </div>
+    <div class="news_b">
+    	<ul>
+        	<li class="clearfix">
+            	<div class="le">
+                	<div class="news_b_t le">
+                    	<img src="img/94.png" class="news_b_img">
+                        <img src="img/yuan_v.png"  class="news_b_img1">
+                    </div>
+                    <div class="news_b_p le">
+                    	<p class="news_b_p ft_14 cl_999 mt_10"><span class="cl_0">造剧网</span>给你留了言</p>
+                        <p class="news_b_p ft_14 cl_999 "><span class="cl_0 ">来自短片</span>
+                        	<a href="javascript:;" class="cl_22">《我不是李白》</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ri ft_14 mt_10 cl_999">
+                	2016-06-23
+                </div>
+            </li>
+            <li class="clearfix">
+            	<div class="le">
+                	<div class="news_b_t le">
+                    	<img src="img/94.png" class="news_b_img">
+                        <img src="img/yuan_v.png"  class="news_b_img1">
+                    </div>
+                    <div class="news_b_p le">
+                    	<p class="news_b_p ft_14 cl_999 mt_10"><span class="cl_0">造剧网</span>给你留了言</p>
+                        <p class="news_b_p ft_14 cl_999 "><span class="cl_0 ">来自短片</span>
+                        	<a href="javascript:;" class="cl_22">《我不是李白》</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ri ft_14 mt_10 cl_999">
+                	2016-06-23
+                </div>
+            </li>
+            <li class="clearfix">
+            	<div class="le">
+                	<div class="news_b_t le">
+                    	<img src="img/94.png" class="news_b_img">
+                        <img src="img/yuan_v.png"  class="news_b_img1">
+                    </div>
+                    <div class="news_b_p le">
+                    	<p class="news_b_p ft_14 cl_999 mt_10"><span class="cl_0">造剧网</span>给你留了言</p>
+                        <p class="news_b_p ft_14 cl_999 "><span class="cl_0 ">来自短片</span>
+                        	<a href="javascript:;" class="cl_22">《我不是李白》</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ri ft_14 mt_10 cl_999">
+                	2016-06-23
+                </div>
+            </li>
+            <li class="clearfix">
+            	<div class="le">
+                	<div class="news_b_t le">
+                    	<img src="img/94.png" class="news_b_img">
+                        <img src="img/yuan_v.png"  class="news_b_img1">
+                    </div>
+                    <div class="news_b_p le">
+                    	<p class="news_b_p ft_14 cl_999 mt_10"><span class="cl_0">造剧网</span>给你留了言</p>
+                        <p class="news_b_p ft_14 cl_999 "><span class="cl_0 ">来自短片</span>
+                        	<a href="javascript:;" class="cl_22">《我不是李白》</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ri ft_14 mt_10 cl_999">
+                	2016-06-23
+                </div>
+            </li>
+            <li class="clearfix">
+            	<div class="le">
+                	<div class="news_b_t le">
+                    	<img src="img/94.png" class="news_b_img">
+                        <img src="img/yuan_v.png"  class="news_b_img1">
+                    </div>
+                    <div class="news_b_p le">
+                    	<p class="news_b_p ft_14 cl_999 mt_10"><span class="cl_0">造剧网</span>给你留了言</p>
+                        <p class="news_b_p ft_14 cl_999 "><span class="cl_0 ">来自短片</span>
+                        	<a href="javascript:;" class="cl_22">《我不是李白》</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ri ft_14 mt_10 cl_999">
+                	2016-06-23
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="news_c">
+    	查看所有消息
+    </div>
+</div>
+</body>
+</html>

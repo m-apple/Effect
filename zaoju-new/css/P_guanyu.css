@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol,{padding:0;}
+*{margin:0;padding:0;}
+body{width:100%;font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#f2f2f2;}
+a{ text-decoration:none; color:#21b9fd;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+
+/*公共样式*/
+
+.mn{margin:0 auto}
+.ds{display:block;}
+.dn{display:none;}
+.bg{background:red;}
+.bg_b{background:blue;}
+.bg_g{background:green;}
+.bg_y{background:yellow;}
+.br_h{border:1px solid #22b9fb;}
+.br_n{border:0px;}
+.c_bw{background:#22b9fd;color:#fff;}
+.c_bf{background:#f5f5f5;color:#989898;}
+.txt{text-align:center;}
+.br{border-radius:3px;}
+.bs_r{box-shadow: 0px 4px 11px rgba(0,0,0,0.2);}
+.mr_30{margin-right:30px;}
+.mt_20{margin-top:20px;}
+.mt_30{margin-top:30px;}
+.mt_35{margin-top:35px;}
+.mt_10{margin-top:10px;}
+.mt_5{margin-top:5px;}
+.mt_15{margin-top:15px;}
+.mt_50{margin-top:50px;}
+.mt_40{margin-top:40px;}
+.ml_5{margin-left:5px;}
+.ml_10{margin-left:10px;}
+.ml_15{margin-left:15px;}
+.ml_20{margin-left:20px;}
+.ml_25{margin-left:25px;}
+.ml_50{margin-left:50px;}
+.ml_50{margin-left:278px;}
+.ml_45{margin-left:45px;}
+.ml_60{margin-left:60px;}
+.ml_30{margin-left:30px;}
+.ml_278{margin-left:278px;}
+.ml_182{margin-left:182px;}
+.mb_10{margin-bottom:10px;}
+.mb_30{margin-bottom:30px;}
+.mb_20{margin-bottom:20px;}
+.pb_98{padding-bottom:98px;}
+.pb_30{padding-bottom:30px;}
+.pt_165{padding-top:165px;}
+.pt_30{padding-top:30px;}
+.pt_20{padding-top:20px;}
+.pl_25{padding-left:25px;}
+.pr_45{padding-right:45px;}
+.p_20{padding:0 20px;}
+.p_60{padding:0 60px;}
+.cl_5a{color:#5aff5b}
+.cl{color:#2bff2b}
+.cl_6{color:#666}
+.cl_9{color:#999}
+.cl_0{color:#000}
+.cl_r{color:red}
+.cl_8{color:#22b8fb}
+.cl_r{color:#fff}
+.ft_14{font-size:14px;}
+.ft_15{font-size:15px;}
+.ft_16{font-size:16px;}
+.ft_18{font-size:18px;}
+.ft_20{font-size:20px;}
+.ft_12{font-size:12px;}
+.ft_b{font-weight:bold;}
+.w_846{width:846px;}
+.w_230{width:230px;}
+.w_60{width:60px;}
+.w_1200{width:1200px;}
+.w_100{width:100px;}
+.w_70{width:70px;}
+.h_36{height:36px;}
+.h_100{height:100px;}
+.h_30{height:30px;}
+.h_60{height:60px;}
+.h_80{height:80px;}
+.f_w6{font-weight:600;}
+.text_45{text-indent:-45px;}
+.ver_mid{vertical-align: middle;}
+
+.box_bor{    box-sizing: border-box;
+    border-bottom: 4px solid #22b9fd;}
+
+.content{height:612px;}
+.content_L{width:258px;background:#fff;height:613px;position:relative;}
+.content_R{width:910px;background:#fff;}
+.content_L .my a{display:block;padding-left: 90px;padding-top:30px;}
+
+.content_R_msg span{height:30px;}
+
+.content_R p{text-indent:2em;padding:0 30px;line-height:25px;font-size:16px;}
+.content_R .p1{text-indent:0em;padding-left:75px;text-indent:-45px;}
+.content_R .p2{text-indent:0em;}
+.content_R .p3{text-indent:0em;}
+.content_R .p4{text-indent:4em;}
+.content_R .p5{text-indent:4em;padding-left:114px;text-indent:-20px;}
+.content_R .p6{text-indent:3em;padding-left:62px;text-indent:16px;}
+.content_R .p7{width:590px;text-indent:0em;padding:0;line-height:25px;}
+.content_R .p8{text-indent:0em;width:760px;padding:0;}
+.content_R h4{padding:0 30px;font-size:14px;line-height:26px;margin-top:25px;}
+.content_R h5{padding:0 30px;line-height:26px;}
+.content_R .chang h4{font-size:18px;}
+
+
+.content_R .comment_1 .t_top_r .Page .num{width:337px;margin:0 auto;margin-top:2px;}
+.content_R .comment_1 .t_top_r .Page .num_1{margin-left:13px;}
+.content_R .comment_1 .t_top_r .Page .num_1:hover{background:none;}
+.content_R .comment_1 .t_top_r .Page a{display:block;width:24px;height:24px;font-size:12px;color:#989898;float:left;text-align:center;line-height:24px;margin-right:3px;border-radius:3px;}
+.content_R .comment_1 .t_top_r .Page .ss{background:#21b9fd;color:#fff;}
+.content_R .comment_1 .t_top_r .Page .ye:hover{background:#ccc;color:#fff;}
+.content_R .comment_1 .t_top_r .Page .ss:hover{background:#21b9fd;color:#fff;}
+
+
+.women{min-height:613px;}
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

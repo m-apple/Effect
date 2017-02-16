@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/register.css"/>
+<link rel="stylesheet" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<script src="js/swiper.min.js"></script>
+<script src="js/zaoju.js"></script>
+<script src="js/move.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+	$(function(){
+		$('.register .close').click(function(){
+			$('.register').hide();	
+			$('.register .close').hide();
+		});
+	});
+	window.onload=function(){
+		var oBtn=document.getElementById('btn');
+		var timer=null;
+		oBtn.onclick=function(){
+			oBtn.style.background="#ccc";
+			oBtn.style.border="none";
+			var num=60;
+			var _this=this;
+			clearInterval(timer);
+			this.disabled=true;
+			timer=setInterval(function(){
+				num--;
+				if(num<=0){
+					_this.value='重新发送';
+					_this.disabled=false;
+					_this.style.background="#21b8fd";
+					_this.style.border="1px solid #21b8fd";
+					clearInterval(timer);
+				}else{
+					_this.value='重新发送('+num+'秒)';
+					
+				}
+			},1000);
+		};	
+	};
+</script>
+</head>
+
+<body style="background:#999;">
+<form action="" method="post">
+<div class="register">
+	<div class="content">
+		<div class="logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid" style="float:left;">注册信息</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="verification">
+        	<span><img src="img/erall.png" />账户与用户名不匹配，请重新输入</span>
+        </div>
+        <div class="form-group pull_left clearfix">
+            <input type="text" class="form-control" placeholder="输入手机号" style="margin-top:0;"/>
+            <input type="text" class="form-control" placeholder="输入验证码" style="margin-top:0;width:168px;float:left;margin:10px 0;"/>
+            <input type="button"  id="btn" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;color:#fff;" value="发送短信到手机"/></button><br />
+            <input type="text" class="form-control" placeholder="昵称" style="margin-top:0;"/>
+            <input type="password" class="form-control" placeholder="设置密码" />
+            <input type="password" class="form-control" placeholder="确认密码" />
+        </div> 
+        <div class="agreement clearfix">
+        	<img src="img/jz.png" /><p>已阅读并同意<a href="javasrcipt:;">《造剧网用户注册协议》</a></p>
+        </div>
+        <button type="button" style="font-size:15px;width:300px;margin-top:6px;"/>注册</button>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+</form>
+</body>
+</html>

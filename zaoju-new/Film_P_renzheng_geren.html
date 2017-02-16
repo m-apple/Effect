@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/P_reply.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$('.content_L .my a').click(function(){
+			$(this).addClass('cl_22').siblings().removeClass('cl_22');
+		});
+		$('.ul2 li .zhao').hover(function(){
+			$(this).children('.zhezhao').show();
+			$(this).children('.cha').show();
+		},function(){
+			$('.zhezhao').hide();
+			$('.cha').hide();
+		})
+		$('.cha').click(function(){
+			$(this).parent().parent().hide();
+		})
+});
+</script>
+</head>
+
+<body>
+<div class="content pt_165 w_1200 mn clearfix">
+	<div class="content_L le">
+    	<div><img src="img/120.png"  class="ml_75 mt_40 zou_pic"/></div>
+        <div class="my">
+        	<a href="javascript:;" class="cl_0 cl_22">我的作品</a>
+            <a href="javascript:;" class="cl_0">我的展示</a>
+            <a href="javascript:;" class="cl_0">我的关注</a>
+            <a href="javascript:;" class="cl_0">我的参与</a>
+            <a href="javascript:;" class="cl_0">账号设置</a>
+            <a href="javascript:;" class="cl_0">我的认证</a>
+        </div>
+        <div class="content_my_end">
+        	<a href="javascript:;" class="cl_r"><span>退出登录</span></a>
+        </div>
+    </div>
+    <div class="content_R ri">
+    	<div class="my_reply ft_15">
+        	<p class="ml_25">认证信息</p>
+        </div>
+        <div class="tongguo p_20"> 
+        	<div class="yi_tongguo">
+                <p class="tongguo_ren_p mt_30">已通过</p>
+                <div class="tongguo_ren">
+                    <p class="mt_30"><span class="cl_9">认证类型：</span>企业/工作室认证</p>
+                    <p class="mt_30"><span class="cl_9">企业名称：</span>北京造剧网络科技有限公司</p>
+                    <p class="mt_30"><span class="cl_9">企业简称：</span>造剧网</p>
+                    <p class="mt_30"><span class="cl_9">企业属性：</span>教育/培训</p>
+                    <p class="mt_30"><span class="cl_9">联系方式：</span>13800138000</p>
+                    <p class="mt_30"><span class="cl_9">企业网站：</span>www.zaojucn.com</p>
+                    <p class="mt_30"><span class="cl_9">公共账号：</span>www.zaojucn.com</p>
+                    <p class="mt_30 ml_37"><span class="cl_9">QQ：</span>www.zaojucn.com</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="tongguo_1 p_30 dn">
+        	<div class="peo">
+               <div class="peo">
+            <input type="hidden" name="type" value="1"/>
+            <div class="mt_30"><span class=" font_we">申请认证:个人</span><span class="tongguo_ren_p cl_r ml_10">未通过</span></div>
+            <p class="ft_12 cl_9 mt_15">
+            	填写一下表单，工作人员审核通过后，即可成为造剧认证影人。请<img src="img/t.png">为必须填写:
+            </p>
+            <div class="clearfix">
+                <div class="">s
+                    <p class="mt_30"><img src="img/t.png" class="pr_10">真实姓名</p>
+                    <input type="text" name="name" value="" class="h_30 w_145  out_line br br_99 mt_5 pl_10 ml_17"/>
+                    <p class="mt_30"><img src="img/t.png" class="pr_10">擅长领域</p>
+                    <select name="attribute" class="h_30 w_145 out_line br br_99 mt_5 ml_17">
+                        <option value="0">请选择擅长领域</option>
+                        <option value="1">吃</option>
+                        <option value="2">喝</option>
+                        <option value="3">玩</option>
+                    </select>
+                </div>
+                <div class="">
+                    <p class="mt_30"><img src="img/t.png" class="pr_10">所在地区</p>
+                    <select name="area_id" id="province" class="h_30 w_145 out_line br br_99 mt_5 ml_17">
+                        <option value="0">请选择省份</option>
+                        @foreach($areaarr as $areaval)
+                            <option value="{{$areaval['id']}}">{{$areaval['name']}}</option>
+                        @endforeach
+                    </select>
+                    <select name="city_id" id="city" class="h_30 w_145 out_line br br_99 mt_5 ml_17">
+                        <option value="0">请选择城市</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+            	<p class="mt_30"><img src="img/t.png" class="pr_10">个人简介<span class="ft_12 cl_9 ml_5">将公开显示在个人主页认证信息中，限<span class="cl_0">100字</span></span></p>
+                <textarea class="tex mt_5 ml_17" name="introduce"></textarea>
+            </div>
+            <div>
+                <div class="">
+                    <p class="mt_30 pl_10">个人签名<span class="ft_12 cl_9 ml_5">选填</span></p>
+                    <input type="text" class="h_30 w_710 out_line br br_99 mt_5 pl_10 ml_17" name="shortdesc"/>
+                </div>
+
+            </div>
+            <div>
+            	<p class="mt_20">
+                <img src="img/t.png" class="pr_10">
+                	证明材料
+                    <span class="ft_12 cl_9 ml_5 ml_17">证明材料包含身份证信息或名片、获奖经历等，请上传对应的证明材料附件不公开</span>
+                </p>
+               	<div class="cail mt_10 ml_20 clearfix" id="material">
+                    <input type="hidden" class="url " name="material" value="">
+                    <input id="fileUpload" type="file" multiple name="image"/>
+                    <a href="javascript:;" class="ml_12">选择文件</a>
+                </div>
+                <!--{{--<div class="ml_20">--}}
+                    {{--<p class="mt_30"><img src="img/t.png" class="pr_10">精选作品(选择你作品中的一部)</p>--}}
+                    {{--<input type="text" name="worksurl" class="h_30 w_710 out_line br br_h mt_5 pl_10" placeholder="http://"/>--}}
+                {{--</div>--}}-->
+
+            </div>
+            
+            <div>
+            	<p class="mt_30"><img src="img/t.png" class="pr_10">形象展现<span class="ft_12 cl_9 ml_5">添加你的形象照片，不少于<span class="cl_0">3张</span>，每张小于<span class="cl_0">2M</span></span></p>
+                <div class="wenjian mt_5 ml_17">
+                	<textarea class="tex mt_5"  placeholder="拖动你的照片到这里"></textarea>
+                    <input class="imageVal" type="hidden" name="photos">
+                </div>
+                <div class="mt_20">
+                    <p class="mt_20">
+                        <img src="img/t.png" class="pr_10">
+                        联系方式<span class="ft_12 cl_9 ml_5">选填、最好都填</span>
+                    </p>
+                    <span class="ml_20">微信号<input type="text" class="h_30 w_150 out_line br br_99 mt_5 pl_10 ml_10 mr_20" name="shortdesc"/></span>
+                    QQ号<input type="text" class="h_30 w_150 out_line br br_99 mt_5 pl_10 ml_10" name="shortdesc"/>
+                 </div>
+
+
+                <p class="mt_50"><img src="img/jz.png" class="pr_10 ">我保证我提交资料的真实性，遵守互联网实名制规定，愿承担因该身份虚假儿造成的一切法律责任。</p>
+                <p class="mt_20"><img src="img/jz.png" class="pr_10">我已阅读并同意</p>
+            </div>
+
+            <a href="javascript:;" class="tijiao">提交审核</a>
+           
+        </div>
+        <div class="peo_1 dn">
+                       <div class="text_center h_185"><img src="img/t.png" class="pr_10"></div>
+ <p class="ft_24">您的认证申请我们已经收到，我们将尽快审核您的认证资料，认证结果我们将以短信形式通知您，请您及时查阅信息。</p>
+            <a href="javascript:;" class="return">返回影人</a>
+        </div>
+        </div>
+        	</div>
+            </div>
+        </div>
+     </div>
+</div>
+</body>

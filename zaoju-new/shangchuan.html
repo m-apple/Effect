@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/shangchuan.css"/>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+	$(function(){
+		$('.upload_pic .close').click(function(){
+			$('.upload_pic').hide();	
+			$('.upload_pic .close').hide();
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div class="upload_pic">
+<form action="" method="post">
+	<div class="header">
+		<div class="logo">
+        	<h4>修改头像</h4>
+            <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+        </div>
+        <div class="content clearfix">
+        	<div class="cont_l le">
+                <div class="cont_l_1">
+                    <a href="javascript:;"><span>+</span>选择图片</a>
+                    <p>只支持JPG、PNG、GIF大小不超过5M</p>
+                </div>
+            </div>
+            <div class="cont_r le">
+            	<div class="tu"><img src="img/92.png"></div>
+            </div>
+        </div>
+        <div class="Btn">
+            <button type="button" class="btn1"/>确定</button>
+            <button type="button" class="btn2"/>取消</button>
+        </div>
+    </div>
+</form>   	
+</div>
+
+</body>
+</html>

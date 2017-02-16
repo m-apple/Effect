@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#999;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.upload_pic{width:500px;height:400px;background:#fff;border-radius:5px;margin:170px auto;position:relative;}
+.upload_pic .header{height:100%;margin:0 auto;}
+.upload_pic .logo{height:38px;border-bottom:1px solid #ededed;}
+.upload_pic .logo h4{line-height:38px;padding:0 15px;}
+.upload_pic .content{width:100%;}
+.upload_pic .content .cont_l{width:300px;}
+.upload_pic .content .cont_l_1{width:240px;height:240px;border:3px dashed #ccc;    margin-left: 20px;margin:30px auto;box-sizing: border-box;}
+.upload_pic .content a{display:block;width:80px;height:25px;border:1px solid #ccc;line-height:25px;margin:auto;margin-top:80px;}
+.upload_pic .content a span{color:#21b8fd;font-weight:bold;}
+.upload_pic .content p{font-size:12px;padding-top:10px;padding:10px 10px;}
+.upload_pic .cont_r{width:200px;margin:80px auto;}
+.upload_pic .cont_r .tu{width:120px;height:120px;border-radius: 50%;margin-left: 25px;}
+.upload_pic .cont_r .tu img{width:100%;height:100%;border-radius:50%;}
+.upload_pic button{font-size:15px;height:36px;width:70px;margin-top:6px;height:36px;border-radius:3px;text-align:center;outline:none;}
+.upload_pic .btn1{background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+.upload_pic .btn1:active{background:#20a8e7;border:1px solid #20a8e7;}
+.upload_pic .btn2{background:#fff;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#21b8fd;}
+.upload_pic .btn2:active{background:#ededed;border:1px solid #fff;color:#21b8fd;}
+.Btn{text-align: center;}
+.close{position:absolute;right:10px;top:10px;}

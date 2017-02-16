@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/Film_personal_index.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bar ul li').click(function(){
+			
+			$(this).addClass('br_nottom').siblings().removeClass('br_nottom');
+		});
+		$('.cont3_l .cont3_pic').hover(function(){
+			$(this).children('.cont3_l .cont3_pic p').show();
+			$(this).children('.mask').hide();;
+		},function(){
+			$(this).children('.cont3_l .cont3_pic p').hide();
+			$(this).children('.mask').show();;
+		})
+		$('.co_p').hover(function(){
+			$(this).children('.tucen').show();
+		},function(){
+			$(this).children('.tucen').hide();
+		});
+		$('.more').click(function(){
+			$('.cont4').show();
+		})
+});
+</script>
+</head>
+
+<body>
+<div>
+	<div class="one">
+    	<div class="big">
+            <div class="geren_top clearfix">
+                <div class="call le clearfix">
+                    <a href="javascript:;">+关注</a>
+                    <a href="javascript:;">联系TA</a>
+                </div>
+                <div class="con1 ml_20 le">
+                    <div class="work_top clearfix">
+                        <a href="javascript:;" class="top_a1 bor_6">个人</a>
+                        <a href="javascript:;" class="top_a2 bor_r6">企业</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	<div class="one_o"><img src="img/bg3.jpg"></div>
+        <div class="zao">
+        	<div class="tumen clearfix">
+                <div class="dizhi le ml_90">
+                    <div class="div2">
+                        <div class="div1">
+                            <img src="img/bg1.png" class="name">
+                        </div>
+                    </div>
+                    <h3c class="ft_36 cl_r">贵忠军</h3>
+                    <p class="ft_14 cl_r"><span>北京</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>北京市</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>导演</span></p>
+                </div>
+                <div class="show_ren ml_90 mt_80 le">
+                    <div class="welcome"><img src="img/zjrz.png"></div>
+                    <div class="welcome mt_80"><img src="img/zaoj.png"></div>
+                </div>
+                <img src="img/meng_logo.png" class="img_logo ri">
+             </div>
+             
+             
+        </div>
+        
+        <div class="bar">
+        	<ul>
+            	<li class="ml_60 mr_150 br_nottom">
+                	<a href="javascript:;">关于TA</a><span>&nbsp;|&nbsp;</span>
+                    <a href="javascript:;">About me</a>
+                </li>
+                <li class="mr_150">
+                	<a href="javascript:;">TA的作品</a><span>&nbsp;|&nbsp;</span>
+                    <a href="javascript:;">Portfolio</a>
+                </li> 
+                <li class="mr_150">
+                	<a href="javascript:;">形象展示</a><span>&nbsp;|&nbsp;</span>
+                    <a href="javascript:;">Photo</a>
+                </li>
+                <li class="">
+                	<a href="javascript:;">联系方式</a><span>&nbsp;|&nbsp;</span>
+                    <a href="javascript:;">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="bgt_1">
+        	<div class="liuyan clearfix">
+            	<textarea></textarea>
+                <p class="le"><span>0</span>/<span>100</span></p>
+                <a href="javascript:;" class="ri">发表留言</a>
+            </div>
+    </div>    
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/recruit_upload.css">
+<link rel="stylesheet" href="css/swiper.min.css"/>
+<script src="js/swiper.min.js"></script>
+<script src="js/zaoju.js"></script>
+<script src="js/move.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+/*$(document).ready(function(){
+	$('#but').click(function(){s
+		$('.text').addClass('.show')
+		$('#but').css('background','#21b9fd');
+		$('.text').removeClass('.show'); 
+	})
+	$('#but_1').click(function(){
+		$('.enclosure').addClass('.show')
+		$('#but').css('background','#21b9fd');
+		$('.enclosure').removeClass('.show');
+	})
+})*/
+$(document).ready(function(){
+	$('#btn').toggle(function(){
+		$('.show_1').show();
+		},function(){
+		$('.show_1').hide();	
+	});
+	$("#word").click( function () {
+		 $('.text').show(); 
+		 $('.enclosure').hide();
+		 $('#word').addClass('show');
+		 $('#word_1').removeClass('show');
+	});
+	$("#word_1").click( function () {
+		 $('.enclosure').show(); 
+		 $('.text').hide();
+		  $('#word_1').addClass('show');
+		 $('#word').removeClass('show');
+	});
+});
+</script>
+</head>
+
+
+<body style="background-color:#f2f2f2;color:#000;">
+	<div class="header clearfix" id="header">
+            <div class="header_m">
+                <div class="header-l clearfix">
+                    <div class="logo"><img src="img/LOGO_break.png"></div>
+                    <div class="pull">
+                        <ul class="clearfix">
+                            <li><a href="javascript:;">发现</a></li>
+                            <li><a href="javascript:;">招募</a></li>
+                            <li><a href="javascript:;">名人堂</a></li>
+                            <li id="btn">
+                            	<a href="javascript:;">...</a>
+                                <div class="show_1">
+                                	<div class="show_top">
+                                    	<a href="javascript:;" style="padding-left:0;">SHOW+</a>
+                                        <a href="javascript:;">圈子</a>
+                                        <a href="javascript:;" style="padding-left:92px;">梦工厂</a>
+                                    </div>
+                                    <div class="show_mid">
+                                    	<p class="xil">
+                                        	<a href="javascript:;">系列</a>
+                                            <a href="javascript:;">专题</a>
+                                        </p>
+                                        <p>
+                                        	<a href="javascript:;">大咖</a>
+                                            <a href="javascript:;">订阅</a>
+                                            <a href="javascript:;">求贤</a>
+                                        </p>
+                                        <p class="xil_1">
+                                        	<a href="javascript:;">活动</a>
+                                            <a href="javascript:;">基金</a>
+                                            <a href="javascript:;">投资</a>
+                                        </p>
+                                    </div>
+                                    <div class="show_bottom">
+                                    	<p>
+                                        	<a href="javascript:;">关于</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">反馈</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">招商</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">联系</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">招聘</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-r">
+                    <div class="form-group pull-left">
+                        <input type="text" class="form-control" placeholder="搜索你喜欢" />
+                        <span class="icon"><img src="img/552cc1e587668_128.png"/></span>
+                    </div>
+                    <div class="user">
+                        <a href="javascript:;" style=""><img src="img/89.png" alt=""/></a>
+                        <a href="javascript:;" class="user_name">全磊<span><img src="img/copy.png"></span></a>
+                        <a href="javascript:;" class="letter">
+                            <img src="img/1111.png" class="envelope">
+                            <div class="round"><img src="img/ellipse .png" alt=""/></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="content">
+    	<div class="con_h">
+        	<p>填写短片创意内容</p>
+        </div>
+        <div class="con_b">
+        	<div class="con_b_t">
+            	<p>短视频创意信息提交</p>
+                <p style="border:none;">造剧网尊重每一位怀揣梦想的人，为了更好的保障你和广大造剧永固的合法权益，请认真填写一下信息。</p>
+            </div>
+            <div class="msg">
+            	<p>用户创意信息填写提交后：</p>
+            	<ul>
+                	<li>1、造剧网会保护你的信息不被泄露。</li>
+                    <li>2、你将对本产创意的版权等其他权益行为承担责任。</li>
+                    <li>3、你提交的创意在被录用后将在法律上允许的范围内向其他用户进行展示。</li>
+                    <li>4、完成身份认证后你的创意被录用的可能性更大。</li>
+                </ul>
+            </div>
+            <p>在你填写创意信息之前，请确保你已阅读《造剧网创意提交指引及版权协议》，并请按要求填写以下信息。</p>
+         </div>
+        <div class="tijiao">
+        	<div class="substance">
+             <form action="" method="post">
+            	<p class="font_16">创意名称<input type="text" /></p>
+                <span class="must">
+                	<img src="img/t.png"   class="pr_6"/>必须填，创意名称是该创意审核筛选的重要标示，创意提交后创意名称不可修改。
+                </span>
+                <div class="txt">
+                    <div class="clearfix">
+                        <span class="txt_t font_16 color_0">提交方式</span>
+                        <div class="version clearfix">
+                            <a href="javascript:;" style="border-radius:5px 0 0 5px;margin-left:18px;" id="word_1">文本录入</a>
+                            <a href="javascript:;"  class="show"  style="border-radius:0 5px 5px 0;"  id="word">附件上传</a>
+                        </div>
+                        <div>
+                            <div class="text">
+                                <span class="must"><img src="img/t.png"   class="pr_6"/>如果你所提交的创意字数较多或者其他文件格式存在，请适应附件形式上上传，要求格式为<i>.doc、.txt、ppt</i>，文件大小不超过5M。</span>
+                               
+                                <div class="version_1 clearfix">
+                                     <p><span>上传创意<input type="text" /><button type="button" class="outl"/>添加</button></span></p>
+                                     <span class="must">
+                                        <img src="img/t.png"  class="pr_6"/>要求格式<i>.doc、.txt、ppt</i>，文件大小不超过5M。
+                                     </span>
+                                </div>
+                            </div>
+                        	<div class="enclosure">
+                                 <div class="must">
+                                        <img src="img/t.png" class="pr_6"/>可在文本框内输入你的创意，字数不超过1000字。
+                                 </div>
+                                 <p>短视频创意正文录入</p>
+                                 <textarea name="MSG" style="margin-left: 80px;"></textarea>
+                                 <p style="color:#999;padding-top:10px;  font-size: 14px;margin-left: 80px;"><img src="img/t.png" class="pr_6"/>字数不超过1000字</p>
+                             </div>
+                         </div>
+                    </div>
+                   <p class="sure"><a href="javascript:;">确认提交</a></p> 	
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#999;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.le{ float:left; _display:inline; }
+.ri{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.mn{margin:0;}
+.cl{color:#fff;}
+.bg{background:red;}
+.bg_b{background:blue;}
+.bg_g{background:green;}
+.bg_y{background:yellow;}
+.bg_2{background:#22b9fb;}
+.bg_h{background:#000;}
+.op{opacity:0.5;}
+.w{width:100%;}
+.h{height:100%;}
+.pb{position:absolute;}
+.w_125{width:125px;}
+.w_158{width:158px;}
+.w_300{width:300px;}
+.w_310{width:310px;}
+.h_34{height:34px;}
+.br_b{border:1px solid #22b9fb;}
+.br_9{border:1px solid #999;}
+.br_r{border:1px solid red;}
+.bu{border-radius:4px;}
+.mt_10{margin-top:10px;}
+.mt_18{margin-top:18px;}
+.mt_6{margin-top:6px;}
+.mr_6{margin-right:6px;}
+.pl{padding-left:10px;}
+.mtl_10{margin:10px 0;}
+.ft_15{font-size:15px;}
+.ft_12{font-size:12px;}
+
+/*登录页*/
+.zhiyin{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:absolute;top:50%;left:50%;margin-left:-267px;margin-top:-250px;}
+.zhiyin .zhiyin_logo{padding:9px 15px;text-align:center;border-bottom:1px solid #ccc;}
+.zhiyin_center{height:390px;overflow:hidden;padding: 0 15px;overflow:scroll;overflow-x:hidden;}
+.zhiyin_center p{text-indent:2em;font-size:14px;line-height:20px;}
+.zhiyin_center h5{line-height:30px;}
+.zhiyin .forward a{display:block;width:42px;height:42px;border-radius:50%;float:left;margin-right:30px;margin-top:20px;margin-bottom:30px;}
+.zhiyin_yue{height:70px;width:534px;text-align:center;padding-top:15px;border-top:1px solid #ccc;}
+
+.zhiyin .zhiyin_content .zhiyin_btn{display:block;width:230px;height:36px;text-align:center;line-height:36px;background:#22b8fd;border-radius:6px;font-size:15px;color:#fff;    margin: 0 auto;}
+.zhiyin .zhiyin_content .zhiyin_btn:active{background:#20a8e7;}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol,{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#999;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+.Reset{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:relative;}
+.Reset .content{width:302px;height:100%;margin:0 auto;}
+.Reset .logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.Reset input{height:36px;margin-top:10px;}
+.Reset button{height:36px;background:#21b8fd;border:1px solid #21b8fd;border-radius:3px;text-align:center;color:#FFF;}
+
+.Reset .line{margin:0 auto;height:22px;text-align:center;}
+.Reset .line .mid{padding:0 10px;width:160px;font-size:16px;color:#9a9a9a;}
+.Reset .line .lin{width:60px;height:10px;border-bottom:1px solid #9a9a9a;}
+
+.code{width:320px;text-align:center;line-height:25px;font-size:14px;}
+.code a{color:#21b8fd;}
+.verification{color:red;}
+.verification span{display:block;font-size:12px;}
+.verification img{padding-right:5px;}
+
+.agreement{line-height:14px;padding:5px 0;}
+.agreement img{float:left;padding-right:10px;}
+.agreement p{float:left;}
+.agreement p a{color:#21b8fd;}
+
+.close{position:absolute;right:10px;top:10px;}

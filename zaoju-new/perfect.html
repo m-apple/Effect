@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/perfect.css"/>
+<link rel="stylesheet" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/alert-style.css"/>
+<script src="js/slide.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/zaoju.js"></script>
+<script src="js/move.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('.close').click(function(){
+			$('.enroll').hide();	
+			$('.perfect').hide();	
+			$('.sign').hide();	
+			$('.ralation').hide();
+			$('.Login').hide();	
+			$('.register').hide();
+			$('.Reset').hide();	
+			$('.forget').hide();
+		});
+	});
+    var speed = 1000; //速度
+    var times = 60;	 //停留时间
+    var wait = times;
+    
+	function checkdata() {
+        var phone = $('#phone').val();
+        re = /^1[34578]\d{9}$/;
+        var rs = re.test(phone);
+        if (!phone) {
+            func.alert2('请填写手机号');
+            return false;
+        } else if (!rs) {
+            func.alert2('手机号格式不正确');
+            return false;
+        }
+        return true;
+    }
+    function send() {
+        var phone = $('#phone').val();
+        re = /^1[34578]\d{9}$/;
+        var rs = re.test(phone);
+        if (!phone) {
+            func.alert2('请填写手机号');
+            return false;
+        } else if (!rs) {
+            func.alert2('手机号格式不正确');
+            return false;
+        }
+		                $('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button>');
+                setCodeStatus();
+/*        $.post('/wap/login/ajax_send_code', {
+            phone: $('#phone').val(),
+        }, function (msg) {
+            msg = eval('(' + msg + ')');
+            if (msg.s == 0) {
+                func.alert2(msg.t);
+            } else {
+                func.alert2(msg.t);
+                $('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button>');
+                setCodeStatus();
+            }
+        });*/
+    }
+    function setCodeStatus() {
+        if (wait == 0) {
+            wait = times;
+            $('.dao').replaceWith('<button type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#21b8fd;border:none;border-radius:3px;color:#fff;" onclick="send()" class="send">重新发送验证码</button>');
+        } else {
+            $('.dao').text(wait + "秒可重发");
+            window.setTimeout("setCodeStatus()", speed);
+            wait--;
+        }
+    }
+    $(document).ready(function () {
+		$('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button> ');
+                setCodeStatus();
+/*        $.post('/wap/login/ajax_send_code', {
+            phone: $('#phone').val(),
+        }, function (msg) {
+            msg = eval('(' + msg + ')');
+            if (msg.s == 0) {
+                func.alert2(msg.t);
+            } else {
+                func.alert2(msg.t);
+                
+            }
+        });*/
+        $(".login-verify").click(function () {
+            var fromurl = "http://www.zaojucn.com/wap";
+            var phone = $('#phone').val();
+            if (!checkdata()) {
+                return false;
+            }
+            if (!$('#code').val()) {
+                func.alert2('请填写短信验证码');
+                return false;
+            }
+            $.post('/wap/login/s_reg', {phone: phone, code: $('input[name=code]').val()}, function (data) {
+                if (data.status == 1) {
+                    if (fromurl) {
+                        urls = fromurl;
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/index') {
+                            urls = '/wap/Index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login') {
+                            urls = '/wap/index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/') {
+                            urls = '/wap/index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/verify') {
+                            urls = '/wap/index/index';
+                        }
+                    } else {
+                        urls = '/wap/index/index';
+                    }
+                    setTimeout("thirdStep('" + urls + "')", 1000);
+                } else if (data.status == 0) {
+                    func.alert2(data.info);
+                    window.setTimeout("window.location.href = '" + data.url + "'", 2000);
+
+                    return;
+                } else {
+                    if (data.url != '') {
+                        if (fromurl)
+                            setTimeout("thirdStep('" + data.url + "/fromurl/" + "')", 1000);
+                        else
+                            setTimeout("thirdStep('" + data.url + "')", 1000);
+                    }
+                }
+            });
+        });
+
+    });
+    function thirdStep(urls) {
+        window.location.href = urls;
+    }
+	$(function(){
+	
+			$('.next').click(function(){
+				if(!checkdata()){
+			return false;
+		}else{
+				$('#mlh').html($('#phone').val());
+				$('.enroll').hide();	
+				$('.enroll .close').hide();
+				$('.perfect').show();	
+				$('.perfect .close').show();
+		}
+			});
+	});
+	$(function(){
+		$('.forward a').click(function(){
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.ralation').show();	
+			$('.ralation .close').show();
+		});
+	});
+	$(function(){
+		$('.a1').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.register').show();	
+			$('.register .close').show();
+		});
+	});
+	$(function(){
+		$('.a2').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.register').hide();	
+			$('.register .close').hide();
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.Login').show();	
+			$('.Login .close').show();
+		});
+	});
+	$(function(){
+		$('.a3').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.Login').hide();	
+			$('.Login .close').hide();
+			$('.forget').show();	
+			$('.forget .close').show();
+		});
+	});
+	$(function(){
+		$('.a4').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.forget').hide();	
+			$('.forget .close').hide();
+			$('.Reset').show();	
+			$('.Reset .close').show();
+		});
+	});
+	$(function(){
+		$('.a5').click(function(){
+			$('.Reset').hide();	
+			$('.Reset .close').hide();
+			$('.forget').hide();	
+			$('.forget .close').hide();
+			$('.sign').show();	
+			$('.sign .close').show();
+		});
+	});
+	$(function(){
+		$('.a6').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.enroll').show();	
+			$('.enroll .close').show();
+		});
+	});
+	$(function(){
+		$('.a7').click(function(){
+			$('.enroll').hide();	
+			$('.enroll .close').hide();
+			$('.sign').show();	
+			$('.sign .close').show();
+		});
+	});
+</script>
+</head>
+
+<body style="background:#999;">
+<form action="" method="post">
+<div class="w h bg_h op pb"></div>
+<!--登录页-->
+<div class="sign">
+	<div class="sign_content">
+		<div class="sign_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin left" ></div>
+            <div class="mid left">使用第三方账号登录</div>
+            <div class="lin left"></div>
+        </div>
+        <div class="forward clearfix">
+				<a href="javascript:;" style="margin-left:20px;"><img src="img/sl.png" /></a>
+                <a href="javascript:;"><img src="img/sl-2.png"/></a>
+                <a href="javascript:;"><img src="img/sl3.png"/></a>
+                <a href="javascript:;" style="margin-right:0;"><img src="img/sl4.png"/></a>
+		</div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid" style="float:left;">使用手机号/邮箱登录</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="verification">
+        	<span><img src="img/erall.png" />账户与用户名不匹配，请重新输入</span>
+        </div>
+        <div class="ss">
+            <input type="text" class=" w_300 h_34 br_b bu pl" placeholder="搜索你喜欢" style="margin-top:0;"/><br />
+            <input type="password" class="w_300 h_34 br_b bu mt_10 pl" placeholder="密码" />
+        </div> 
+        <div class="remember clearfix">
+        	<a href="javascript:;" class="me clearfix"><img src="img/jz.png" /><span>记住我</span></a>
+            <a href="javascript:;"  class="a3">忘记密码？</a>
+        </div>
+        <div><a href="javascript:;" class="sign_btn">登录</a></div>
+        <div class="account">还没有账号？<a href="javascript:;" class="a6">马上注册</a></div>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+
+<!--注册页-->
+<div class="enroll">
+	<div class="enroll_content">
+		<div class="enroll_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid" style="float:left;">使用手机号/邮箱注册</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="" id="phone" placeholder="输入手机或者邮箱号" style="margin-top:0;"/><br />
+            <button type="button" class="next" style="font-size:15px;width:300px;margin-top:6px;"/>下一步</button>
+		</div> 
+        
+       <div class="agreement clearfix">
+        	<a href="javascript:;" class="a7">返回第三方或者账号登录</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--完善信息页-->
+<div class="perfect">
+	<div class="perfect_content">
+		<div class="perfect_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid" style="float:left;">完善注册信息</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="code"><p>填写手机号<span style="color:#22b8fd"> +86 <mlh id='mlh'>18694073302</mlh></span>收到系统发来的4位短信验证码</p></div>
+        <div class="perfect_verification">
+        	<span><img src="img/erall.png" />两次密码不一样</span>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="w_158 pl left br_b mtl_10 bu" placeholder="输入验证码"/>
+            <button type="button" onclick="send()" class="send w_125 right mtl_10 br_b bg_2 bu cl"/>发送到手机</button><br />
+            <input type="text" class="bu br_9 w_300 pl mt_10" placeholder="昵称"/>
+            <input type="password" class="bu br_9 w_300 pl mt_10" placeholder="设置密码" />
+            <input type="password" class="br_r bu w_300 pl mt_10" placeholder="确认密码"/>
+        </div> 
+        <div class="perfect_agreement clearfix mt_10">
+        	<img src="img/jz.png" /><p>已阅读并同意<a href="javasrcipt:;">《造剧网用户注册协议》</a></p>
+        </div>
+        <a href="javascript:;"><button type="button" class="mt_10 ft_15 w_300"/>注册</button></a>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--关联页-->
+<div class="ralation">
+	<div class="ralation_content">
+		<div class="ralation_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="ralation_header_pic"><img src="img/90-90.png" /></div>
+        <p>全磊</p>
+        <p class="gl">您尚未关联造剧网账号</p>
+        <button type="button" class="a1">关联新账号</button><br />
+		<button type="button" class="a2" style="color:#21b9fd;background:#fff;border:1px solid #21b9fd;">关联已有账号</button>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--注册信息页-->
+<div class="register">
+	<div class="register_content">
+		<div class="register_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid" style="float:left;">注册信息</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="register_verification">
+        	<span class="ft_12"><img src="img/erall.png" />账户与用户名不匹配，请重新输入</span>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="re bu w_300 pl br_9" placeholder="输入手机号"/><br />
+            <div class="clearfix">
+                <input type="text" class="re mr_6 left mt_10 w_158 bu pl br_9" placeholder="输入验证码" />
+                <input type="button"  id="btn" class="re right mt_10 bg_2 bu cl br_b w_125 bu" value="发送短信到手机"/>
+            </div>
+            <input type="text" class="re bu w_300 pl br_9" placeholder="昵称"/>
+            <input type="password" class="re bu w_300 pl br_9" placeholder="设置密码"/>
+            <input type="password" class="re bu w_300 pl br_9" placeholder="确认密码"/>
+        </div> 
+        <div class="register_agreement clearfix mt_18">
+        	<img src="img/jz.png" /><p>已阅读并同意<a href="javasrcipt:;">《造剧网用户注册协议》</a></p>
+        </div>
+        <button type="button" class="w_300 ft_15 mt_18"/>注册</button>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--注册信息页-用于关联页跳转-->
+<div class="Login">
+	<div class="Login_content">
+		<div class="Login_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin left"></div>
+            <div class="mid left">注册信息</div>
+            <div class="lin left"></div>
+        </div>
+        <div class="Login_verification">
+        	<span><img src="img/erall.png" />账户与用户名不匹配，请重新输入</span>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="bu w_300 pl br_9" placeholder="输入手机号"/>
+            <input type="password" class="bu w_300 pl br_9" placeholder="密码" />
+        </div> 
+        <div class="Login_agreement clearfix">
+        	<a href="javasrcipt:;" class="a3">忘记密码？</a>
+        </div>
+        <button type="button" style="font-size:15px;width:300px;margin-top:6px;"/>登录</button>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--忘记密码-->
+<div class="forget">
+	<div class="forget_content">
+		<div class="forget_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin" style="float:left;"></div>
+            <div class="mid a3" style="float:left;">忘记密码</div>
+            <div class="lin" style="float:left;"></div>
+        </div>
+        <div class="forget_verification">
+        	<span><img src="img/erall.png" />手机或邮箱格式有误<!--请输入手机号或邮箱 请先将验证码拖动到指定位置 该手机位绑定账户--></span>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="form-control" placeholder="输入手机或者邮箱号" style="margin-top:0;"/>
+		</div> 
+    	<button type="button" class="a4" style="font-size:15px;width:300px;margin-top:6px;"/>重置</button>
+        <div class="forget_agreement clearfix">
+        	<a href="javasrcipt:;" class="a5">又想起来了！</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+
+<!--重置密码页-->
+<div class="Reset">
+	<div class="Reset_content">
+		<div class="Reset_logo"><img src="img/LOGO_break.png" /></div>
+        <div class="line clearfix">
+        	<div class="lin left"></div>
+            <div class="mid left">重置密码</div>
+            <div class="lin left"></div>
+        </div>
+        <div class="code"><p>填写手机号<a href="javascript:;"> +86 18694073302 </a>收到系统发来的4位短信验证码</p></div>
+        <div class="Reset_verification">
+        	<span><img src="img/erall.png" />两次密码不一样</span>
+        </div>
+        <div class="clearfix">
+            <input type="text" class="w_158 pl left br_b mtl_10 bu" placeholder="输入验证码"/>
+            <button type="button"  class="w_125  right mtl_10 bu"/>重新发送</button><br />
+            <input type="password" class="br_b bu w_300" placeholder="设置新密码"/>
+            <input type="password" class="br_r bu w_300" placeholder="确认密码" />
+        </div> 
+       	<button type="button" class="w_300 ft_15 bu mt_18"/>完成</button>
+    </div>
+    <a href="javascript:;" class="close"><img src="img/552cc15b74087_128.png" /></a>
+</div>
+</form>
+</body>
+</html>
+

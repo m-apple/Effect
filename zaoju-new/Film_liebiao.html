@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/Film_personal_index.css">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bar ul li').click(function(){
+			
+			$(this).addClass('br_nottom').siblings().removeClass('br_nottom');
+		});
+		$('.cont3_l .cont3_pic').hover(function(){
+			$(this).children('.cont3_l .cont3_pic p').show();
+			$(this).children('.cont3_pic_line').show();
+			$(this).children('.mask').hide();
+		},function(){
+			$(this).children('.cont3_l .cont3_pic p').hide();
+			$(this).children('.cont3_pic_line').hide();
+			$(this).children('.mask').show();;
+		})
+		$('.co_p').hover(function(){
+			$(this).children('.tucen').show();
+		},function(){
+			$(this).children('.tucen').hide();
+		});
+		$('.more').click(function(){
+			$('.cont4').show();
+		})
+});
+</script>
+</head>
+
+<body>
+<div>
+	<div class="one">
+            <div class="big">
+                <div class="geren_top clearfix">
+                    @if($memauthinfo['id'] != session('id'))
+                        <div class="call le clearfix">
+                            @if($state == 1)
+                                <a href="javascript:;" class="top_a1" onclick="memfocus({{$memauthinfo['id']}},2,$(this))">已关注</a>
+                            @else
+                                <a href="javascript:;" onclick="memfocus({{$memauthinfo['id']}},1,$(this))">+关注</a>
+                            @endif
+                            <a href="javascript:;">联系TA</a>
+                        </div>
+                    @endif
+                    <div class="con1 ml_20 le">
+                        <div class="work_top clearfix">
+                            <a href="javascript:;" class="@if($memauthinfo['type'] == 1) top_a1 @else top_a2 @endif bor_6">个人</a>
+                            <a href="javascript:;" class="@if($memauthinfo['type'] == 2) top_a1 @else top_a2 @endif bor_r6">企业</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one_o"><img src="img/bg1.png"></div>
+            <div class="zao">
+                <div class="tumen clearfix">
+                    <div class="dizhi le ml_90">
+                        <div class="div2">
+                            <div class="div1">
+                                <img src="{{$memauthinfo['headpic']}}" class="name">
+                            </div>
+                        </div>
+                        <h3c class="ft_36 cl_f">{{$memauthinfo['memberauth']['name']}}</h3>
+                            <p class="ft_14 cl_f">
+                                <span>
+                                    @foreach($provincearr as $proval)
+                                                @if($proval['id'] == $memauthinfo['memberauth']['area_id'])
+                                                    {{$proval['name']}}
+                                                @endif
+                                            @endforeach
+                                </span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                <span>
+                                    {{ \App\Models\City::where('id',$memauthinfo['memberauth']['city_id'])->value('name') }}
+                                </span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                <span>
+                                    @foreach($industryarr as $inval)
+                                        @if($inval['id'] == $memauthinfo['memberauth']['attribute'])
+                                            {{$inval['text']}}
+                                        @endif
+                                    @endforeach
+                                </span>
+                            </p>
+                    </div>
+                    <div class="show_ren ml_90 le">
+                        <div class="welcome cl_f">WELCOME</div>
+                        <div class="welcome_1 mt_40 f_w6 ft_20 cl_f">
+                           <!-- {{$memauthinfo['memberauth']['shortdesc']}}-->
+                        </div>
+                    </div>
+                    <img src="img/meng_logo.png" class="img_logo ri">
+                </div>
+            </div>
+
+            <div class="bar">
+                <ul>
+                    <li class="cl_0">
+                        <a href="">
+                            <p class="mt_10">
+                                TA的作品<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Portfolio
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0 br_nottom">
+                        <a href="#bgt">
+                            <p class="mt_10">
+                                图片剧照<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Photo
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont5">
+                            <p class="mt_10">
+                                合作盟友<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Ally
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont6">
+                            <p class="mt_10">
+                                关注/粉丝<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Attention/Fan
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cl_0">
+                        <a href="#cont6">
+                            <p class="mt_10">
+                                联系方式<span class="cl_9">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Contact
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        	<div>
+            	<ul>
+                	<li>
+                    	
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+</body>
+</html>
+

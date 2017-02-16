@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS layout */
+
+/* 默认样式 */
+*{margin:0;padding:0;}
+body,div,ul,li,span,img,input,form{ margin:0; padding:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd{ margin:0;}
+ul,ol,{padding:0;}
+*{margin:0;padding:0;}
+body{ font-size:16px; font-family:"微软雅黑";width:100%;margin:auto;background:#999;}
+a{ text-decoration:none; color:#000;}
+li{ list-style:none; }
+img{ border:none 0;}
+/*input{ outline:none; border:none; background:none;}
+input,textarea,select{ margin:0; }					
+input,textarea{ padding:0;}
+input::-ms-clear{display:none;}*/
+
+
+/* 浮动公共样式 */
+.left{ float:left; _display:inline; }
+.right{ float:right; _display:inline; }
+.clearfix:after{ display:block; content:''; clear:both;}
+.clear{ zoom:1;}
+
+
+.sign{width:534px;height:500px;background:#fff;border-radius:5px;margin:170px auto;position:relative;}
+.sign .content{width:302px;height:100%;margin:0 auto;}
+.sign .logo{text-align:center;padding-top:30px;padding-bottom:20px;}
+.sign .line{margin:0 auto;height:22px;text-align:center;}
+.sign .line .mid{padding:0 10px;width:160px;font-size:16px;}
+.sign .line .lin{width:60px;height:10px;border-bottom:1px solid #333;}
+
+.forward a{display:block;width:42px;height:42px;border-radius:50%;float:left;padding-right:30px;padding-top:20px;padding-bottom:30px;}
+
+.verification{padding-top:10px;padding-bottom:2px;color:red;height:33px;}
+.verification span{display:none;}
+.verification img{padding-right:5px;}
+.pull_left input{width:288px;height:34px;border-radius:3px;margin-top:10px;font-size:16px;padding-left:10px;；border:1px solid #999;border:none;border:1px solid #999;}
+.remember{padding:15px 0;}
+.remember .me{float:left;height:14px;line-height:14px;}
+.remember a{float:right;font-size:14px;}
+.remember .me img{display:block;float:left;}
+.remember span{display:block;height:14px;float:left;font-size:14px;}
+
+.content .btn{display:block;width:300px;height:36px;text-align:center;line-height:36px;background:#bebebe;border-radius:6px;font-size:15px;color:#fff;}
+.account{text-align:center;padding-top:20px;}
+.account a{color:#22b9ff;}
+
+.close{position:absolute;right:10px;top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,964 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/recruit_style.css">
+<link rel="stylesheet" href="css/perfect.css"/>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('.close').click(function(){
+			$('.enroll').hide();	
+			$('.perfect').hide();	
+			$('.sign').hide();	
+			$('.ralation').hide();
+			$('.Login').hide();	
+			$('.register').hide();
+			$('.Reset').hide();	
+			$('.forget').hide();
+		});
+	});
+    var speed = 1000; //速度
+    var times = 60;	 //停留时间
+    var wait = times;
+    
+	function checkdata() {
+        var phone = $('#phone').val();
+        re = /^1[34578]\d{9}$/;
+        var rs = re.test(phone);
+        if (!phone) {
+            func.alert2('请填写手机号');
+            return false;
+        } else if (!rs) {
+            func.alert2('手机号格式不正确');
+            return false;
+        }
+        return true;
+    }
+    function send() {
+        var phone = $('#phone').val();
+        re = /^1[34578]\d{9}$/;
+        var rs = re.test(phone);
+        if (!phone) {
+            func.alert2('请填写手机号');
+            return false;
+        } else if (!rs) {
+            func.alert2('手机号格式不正确');
+            return false;
+        }
+		                $('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button>');
+                setCodeStatus();
+/*        $.post('/wap/login/ajax_send_code', {
+            phone: $('#phone').val(),
+        }, function (msg) {
+            msg = eval('(' + msg + ')');
+            if (msg.s == 0) {
+                func.alert2(msg.t);
+            } else {
+                func.alert2(msg.t);
+                $('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button>');
+                setCodeStatus();
+            }
+        });*/
+    }
+    function setCodeStatus() {
+        if (wait == 0) {
+            wait = times;
+            $('.dao').replaceWith('<button type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#21b8fd;border:none;border-radius:3px;color:#fff;" onclick="send()" class="send">重新发送验证码</button>');
+        } else {
+            $('.dao').text(wait + "秒可重发");
+            window.setTimeout("setCodeStatus()", speed);
+            wait--;
+        }
+    }
+    $(document).ready(function () {
+		$('.send').replaceWith('<button  type="button" style="margin-top:0;width:125px;float:right;margin:10px 0;background:#cccccc;border:none;border-radius:3px;color:#fff;" class="dao">' + wait + '秒可重发</button> ');
+                setCodeStatus();
+/*        $.post('/wap/login/ajax_send_code', {
+            phone: $('#phone').val(),
+        }, function (msg) {
+            msg = eval('(' + msg + ')');
+            if (msg.s == 0) {
+                func.alert2(msg.t);
+            } else {
+                func.alert2(msg.t);
+                
+            }
+        });*/
+        $(".login-verify").click(function () {
+            var fromurl = "http://www.zaojucn.com/wap";
+            var phone = $('#phone').val();
+            if (!checkdata()) {
+                return false;
+            }
+            if (!$('#code').val()) {
+                func.alert2('请填写短信验证码');
+                return false;
+            }
+            $.post('/wap/login/s_reg', {phone: phone, code: $('input[name=code]').val()}, function (data) {
+                if (data.status == 1) {
+                    if (fromurl) {
+                        urls = fromurl;
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/index') {
+                            urls = '/wap/Index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login') {
+                            urls = '/wap/index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/') {
+                            urls = '/wap/index/index';
+                        }
+                        if (fromurl == 'http://www.zaojucn.com/wap/login/verify') {
+                            urls = '/wap/index/index';
+                        }
+                    } else {
+                        urls = '/wap/index/index';
+                    }
+                    setTimeout("thirdStep('" + urls + "')", 1000);
+                } else if (data.status == 0) {
+                    func.alert2(data.info);
+                    window.setTimeout("window.location.href = '" + data.url + "'", 2000);
+
+                    return;
+                } else {
+                    if (data.url != '') {
+                        if (fromurl)
+                            setTimeout("thirdStep('" + data.url + "/fromurl/" + "')", 1000);
+                        else
+                            setTimeout("thirdStep('" + data.url + "')", 1000);
+                    }
+                }
+            });
+        });
+
+    });
+    function thirdStep(urls) {
+        window.location.href = urls;
+    }
+	$(function(){
+	
+			$('.next').click(function(){
+				if(!checkdata()){
+			return false;
+		}else{
+				$('#mlh').html($('#phone').val());
+				$('.enroll').hide();	
+				$('.enroll .close').hide();
+				$('.perfect').show();	
+				$('.perfect .close').show();
+		}
+			});
+	});
+	$(function(){
+		$('.forward a').click(function(){
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.ralation').show();	
+			$('.ralation .close').show();
+		});
+	});
+	$(function(){
+		$('.a1').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.register').show();	
+			$('.register .close').show();
+		});
+	});
+	$(function(){
+		$('.a2').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.register').hide();	
+			$('.register .close').hide();
+			$('.ralation').hide();	
+			$('.ralation .close').hide();
+			$('.Login').show();	
+			$('.Login .close').show();
+		});
+	});
+	$(function(){
+		$('.a3').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.Login').hide();	
+			$('.Login .close').hide();
+			$('.forget').show();	
+			$('.forget .close').show();
+		});
+	});
+	$(function(){
+		$('.a4').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.forget').hide();	
+			$('.forget .close').hide();
+			$('.Reset').show();	
+			$('.Reset .close').show();
+		});
+	});
+	$(function(){
+		$('.a5').click(function(){
+			$('.Reset').hide();	
+			$('.Reset .close').hide();
+			$('.forget').hide();	
+			$('.forget .close').hide();
+			$('.sign').show();	
+			$('.sign .close').show();
+		});
+	});
+	$(function(){
+		$('.a6').click(function(){
+			$('.sign').hide();	
+			$('.sign .close').hide();
+			$('.enroll').show();	
+			$('.enroll .close').show();
+		});
+	});
+	$(function(){
+		$('.a7').click(function(){
+			$('.enroll').hide();	
+			$('.enroll .close').hide();
+			$('.sign').show();	
+			$('.sign .close').show();
+		});
+	});
+</script>
+<script>
+$(document).ready(function(){
+	$('.num .ye').on("click", function(){
+		$(this).addClass('ss').siblings().removeClass('ss'); 
+
+		/*var a=[1,2,3,2,2,1,3];
+		var con="";
+		for(i=0;i<a.length;i++){
+			
+			if(i%5==0){		
+			con+='<ul class="clearfix aa"><li style="margin:0;"><a href="javascript:;"><div class="top"><img src="img/91 (2).png" alt=""><div class="';
+			if(a[i]==1){
+			con+='rectangle';	
+			}else if(a[i]==2){
+				con+='rectangle_1';
+			}else if(a[i]==3){
+				con+='rectangle_2';
+			}
+			con+='">招募中<span>剩余30天</span></div></div><div class="below"><div class="below_t"><p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p><div class="remuneration clearfix"><p style="float:left;">已经有<span>100</span>人参与</p><p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p></div></div><div class="below_b clearfix"><div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div><div class="right" style="float:left;"><p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p><p style="font-size:12px;color#:999">发布时间：2016年5月30日</p></div></div></div></a></li>';
+			}else if(i%5==4){
+				con+='<li><a href="javascript:;"><div class="top"><img src="img/91 (2).png" alt=""><div class="';
+			if(a[i]==1){
+			con+='rectangle';	
+			}else if(a[i]==2){
+				con+='rectangle_1';
+			}else if(a[i]==3){
+				con+='rectangle_2';
+			}
+			con+='">招募中<span>剩余30天</span></div></div><div class="below"><div class="below_t"><p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p><div class="remuneration clearfix"><p style="float:left;">已经有<span>100</span>人参与</p><p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p></div></div><div class="below_b clearfix"><div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div><div class="right" style="float:left;"><p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p><p style="font-size:12px;color#:999">发布时间：2016年5月30日</p></div></div></div></a></li></ul>';
+				}else{
+			con+='<li><a href="javascript:;"><div class="top"><img src="img/91 (2).png" alt=""><div class="';
+			if(a[i]==1){
+			con+='rectangle';	
+			}else if(a[i]==2){
+				con+='rectangle_1';
+			}else if(a[i]==3){
+				con+='rectangle_2';
+			}
+			con+='">招募中<span>剩余30天</span></div></div><div class="below"><div class="below_t"><p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p><div class="remuneration clearfix"><p style="float:left;">已经有<span>100</span>人参与</p><p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p></div></div><div class="below_b clearfix"><div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div><div class="right" style="float:left;"><p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p><p style="font-size:12px;color#:999">发布时间：2016年5月30日</p></div></div></div></a></li>';
+					
+					}
+		}
+		
+		
+		$('.aa').html(con)*/
+	});
+			
+	$('.tYpe .t_t a').click(function(){
+		$(this).addClass('active');
+	})
+	$('.t_b').click(function(){
+		$('.tYpe .t_t a').removeClass('active');
+	})
+		$('#btn').toggle(function(){
+			$('.show_1').show();
+			},function(){
+			$('.show_1').hide();	
+			});    
+ 	});
+
+</script>
+</head>
+
+<body style="background-color:#f2f2f2;color:#000;width:100%;">
+	<div class="header clearfix" id="header">
+            <div class="header_m clearfix">
+                <div class="header-l clearfix">
+                    <div class="logo"><img src="img/LOGO_break.png"></div>
+                    <div class="pull">
+                        <ul class="clearfix">
+                            <li><a href="javascript:;">发现</a></li>
+                            <li><a href="javascript:;">招募</a></li>
+                            <li><a href="javascript:;">名人堂</a></li>
+                            <li id="btn">
+                            	<a href="javascript:;">...</a>
+                                <div class="show_1">
+                                	<div class="show_top">
+                                    	<a href="javascript:;" style="padding-left:0;">SHOW+</a>
+                                        <a href="javascript:;">圈子</a>
+                                        <a href="javascript:;" style="padding-left:92px;">梦工厂</a>
+                                    </div>
+                                    <div class="show_mid">
+                                    	<p class="xil">
+                                        	<a href="javascript:;">系列</a>
+                                            <a href="javascript:;">专题</a>
+                                        </p>
+                                        <p>
+                                        	<a href="javascript:;">大咖</a>
+                                            <a href="javascript:;">订阅</a>
+                                            <a href="javascript:;">求贤</a>
+                                        </p>
+                                        <p class="xil_1">
+                                        	<a href="javascript:;">活动</a>
+                                            <a href="javascript:;">基金</a>
+                                            <a href="javascript:;">投资</a>
+                                        </p>
+                                    </div>
+                                    <div class="show_bottom">
+                                    	<p>
+                                        	<a href="javascript:;">关于</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">反馈</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">招商</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">联系</a>
+                                            <span>.</span>
+                                            <a href="javascript:;">招聘</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-r">
+                    <div class="form-group pull-left">
+                        <input type="text" class="form-control" placeholder="搜索你喜欢" />
+                        <span class="icon"><img src="img/552cc1e587668_128.png"/></span>
+                    </div>
+                    <div class="user">
+                        <a href="javascript:;" style=""><img src="img/89.png" alt=""/></a>
+                        <a href="javascript:;" class="user_name">全磊<span><img src="img/copy.png"></span></a>
+                        <a href="javascript:;" class="letter">
+                            <img src="img/1111.png" class="envelope">
+                            <div class="round"><img src="img/ellipse .png" alt=""/></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="header_1">
+            	<div class="header_1_m">
+                    <div class="left">
+                        <h4>国内首个影视创意交易平台</h4>
+                        <p>已有数百万出众网友，在造剧网实现梦想</p>
+                    </div>
+                    <div class="right">
+                        <div class="top clearfix">
+                            <a href="#" class="bg_b"></a>
+                            <a href="#" class="bg"></a>
+                            <a href="#" class="bg_g"></a>
+                            <a href="#" class="bg_y"></a>
+                        </div>
+                        <div class="bottom">
+                            <div class="line clearfix">
+                                <div class="lin" style="float:left;"></div>
+                                <div class="mid" style="float:left;">用以上社交账号登录</div>
+                                <div class="lin" style="float:left;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    		</div>
+    
+    <div class="content">
+    	<div class="advertisement">
+        	<ul class="clearfix">
+            	<li class="ml"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li class="ml"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div class="tYpe">
+        	<div class="t_t">
+            	<ul class="clearfix">
+                	<li class="li1">
+                    	<a href="javascript:;">招募中</a>
+                        <a href="javascript:;">招募成功</a>
+                        <a href="javascript:;">招募完成</a>/
+                        <a href="javascript:;" class="li1_end">招募结束</a>
+                    </li>
+                    <li class="li2">
+                    	<a href="javascript:;">参与最多</a>
+                        <a href="javascript:;">人气最旺</a>
+                        <a href="javascript:;">回报最高</a>
+                        <a href="javascript:;">时间最短</a>
+                    </li>
+                    <li class="li3">
+                    	<a href="javascript:;">励志</a>
+                        <a href="javascript:;">校园</a>
+                        <a href="javascript:;">爱情</a>
+                        <a href="javascript:;">公益</a>
+                        <a href="javascript:;">动画</a>
+                        <a href="javascript:;">喜剧</a>
+                        <a href="javascript:;">恐怖</a>
+                        <a href="javascript:;">科幻</a>
+                        <a href="javascript:;">悬疑</a>
+                        <a href="javascript:;">旅行</a>
+                        <a href="javascript:;">音乐</a>
+                        <a href="javascript:;">教育</a>
+                        <a href="javascript:;">剧情</a>
+                        <a href="javascript:;">不限</a>
+                    </li>
+                    <li class="li4">
+                    	<a href="javascript:;">短片</a>
+                        <a href="javascript:;">微电影</a>
+                        <a href="javascript:;">网剧</a>
+                        <a href="javascript:;">TVC广告</a>
+                        <a href="javascript:;" style="padding-left:50px;">宣传片</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="t_b">
+            	<a href="javascript:;">清除条件</a>
+            </div>
+        </div>
+        <div class="content_3">
+           <div class="bottom">
+                <ul class="clearfix">
+                    <li style="margin:0;">
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/91 (2).png" alt=""/>
+                            <div class="rectangle">招募中<span>剩余30天</span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg"  style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/102.png">
+                            <div class="rectangle">招募中<span>剩余10</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手君乐宝</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">君乐宝乳液有限公司<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/93.png">
+                            <div class="rectangle_2">招募已完成<span></span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手七彩云南</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">七彩云南<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle_1">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                	<li style="margin:0;">
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/91 (2).png" alt=""/>
+                            <div class="rectangle">招募中<span>剩余30天</span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg"  style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/102.png">
+                            <div class="rectangle">招募中<span>剩余10</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手君乐宝</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">君乐宝乳液有限公司<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/93.png">
+                            <div class="rectangle">招募已完成<span></span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手七彩云南</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">七彩云南<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle_1">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                	<li style="margin:0;">
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/91 (2).png" alt=""/>
+                            <div class="rectangle">招募中<span>剩余30天</span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg"  style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/102.png">
+                            <div class="rectangle">招募中<span>剩余10</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手君乐宝</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">君乐宝乳液有限公司<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/93.png">
+                            <div class="rectangle">招募已完成<span></span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手七彩云南</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">七彩云南<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle_1">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                	<li style="margin:0;">
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/91 (2).png" alt=""/>
+                            <div class="rectangle">招募中<span>剩余30天</span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧网联手携程《一百个说走就走的旅行》</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥2000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">携程旅行网<img src="img/guanggao_v.jpg"  style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/102.png">
+                            <div class="rectangle">招募中<span>剩余10</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手君乐宝</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">君乐宝乳液有限公司<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/93.png">
+                            <div class="rectangle">招募已完成<span></span></div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手七彩云南</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">七彩云南<img src="img/guanggao_v.jpg" style="padding-left:10px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                           <div class="top">
+                            <img src="img/94.png">
+                            <div class="rectangle_1">招募中剩余<span>3</span>天</div>
+                           </div>
+                           <div class="below">
+                                <div class="below_t">
+                                    <p>青春的相见-造剧联手优酷</p>
+                                    <div class="remuneration clearfix">
+                                        <p style="float:left;">已经有<span>100</span>人参与</p>
+                                        <p style="float:right;padding-right:12px;">回报<i>￥1000</i>/集</p>
+                                    </div>
+                                </div>
+                                <div class="below_b clearfix">
+                                    <div class="left" style="float:left;margin:0 auto;"><img src="img/zu-98.png" style="margin-top:10px;"></div>
+                                    <div class="right" style="float:left;">
+                                        <p style="font-size:14px;color#:222;font-weight:bold;margin-top:15px;">北京陌陌科技有限公司<img src="img/guanggao_v.jpg" style="padding-left:5px;"></p>
+                                        <p style="font-size:12px;color#:999">发布时间：2016年5月30日</p>
+                                    </div>
+                                </div>
+                           </div> 
+                        </a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+        <div class="Page">
+        	<div class="num">
+                <a href="javascript:;" class="ye ss">1</a>
+                <a href="javascript:;" class="ye">2</a>
+                <a href="javascript:;" class="ye">3</a>
+                <a href="javascript:;" class="ye">4</a>
+                <a href="javascript:;" class="ye">5</a>
+                <a href="javascript:;" class="ye">6</a>
+                <a href="javascript:;" class="ye">7</a>
+                <a href="javascript:;" class="ye">8</a>
+                <a href="javascript:;" class="ye">9</a>
+                <a href="javascript:;" class="spot ye">...</a>
+                <a href="javascript:;" class="ye">30</a>
+                <a href="javascript:;" class="num_1"><img src="img/sanjiao.png" /></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+    	<div class="foot">
+    	<p style="padding-top:24px;">
+        	<a href="javasrcipt:;">关于造剧</a>
+            <a href="javasrcipt:;">造剧梦工厂</a>
+            <a href="javasrcipt:;">媒体报道</a>
+            <a href="javasrcipt:;">加入我们</a>
+            <a href="javasrcipt:;">联系我们</a>
+            <a href="javasrcipt:;">广告招商</a>
+        </p>
+        <p style="font-weight:bold;">Copyright &nbsp; 2011-2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京造剧网络科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京ICP备15049802号-1</p>
+        </div>
+    </footer>
+</body>
+</html>
