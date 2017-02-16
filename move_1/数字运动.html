@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+</style>
+<script>
+	window.onload=function(){
+		var oInp=document.getElementsByTagName('input')[0];
+		var timer=null;
+		oInp.onclick=function(){
+			var start=0;
+			var dis=100-start;
+			var time=1000;
+			var count=Math.floor(time/30);
+			var n=0;
+			clearInterval(timer);
+			timer=setInterval(function(){
+				n++;
+				var a=1-n/count;
+				var cur=start+dis*(1-Math.pow(a,3));
+				oInp.value=cur.toFixed(2);
+				
+				if(count==n){
+					clearInterval(timer);	
+				}	
+			},30);
+		}	
+	};
+</script>
+</head>
+
+<body>
+	<input type="text" value="0" />
+</body>
+</html>
+
+
+
+
+
+
+

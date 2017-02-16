@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	input{ width:100px; height:50px; position:fixed; bottom:50px; right:50px; display:none;}
+</style>
+<script>
+	window.onload=function(){
+		var oBtn=document.getElementById('btn');
+		var timer=null;
+		
+		var bSys=false;
+		window.onscroll=function(){
+			if(bSys){
+				clearInterval(timer);		
+			}
+			bSys=true;
+			var oSt=document.body.scrollTop||document.documentElement.scrollTop;
+			if(oSt>0){
+				oBtn.style.display='block';
+			}else{
+				oBtn.style.display='none';	
+			}	
+		}
+		
+		
+		oBtn.onclick=function(){
+			var start=document.body.scrollTop||document.documentElement.scrollTop;
+			var dis=0-start;
+			var time=1000;
+			var count=Math.floor(time/30);
+			var n=0;
+			
+			clearInterval(timer);
+			timer=setInterval(function(){
+				bSys=false;
+				n++;
+				var a=1-n/count;
+				var cur=start+dis*(1-a*a*a);
+				document.body.scrollTop=document.documentElement.scrollTop=cur;
+				if(n==count){
+					clearInterval(timer);
+				}
+			},30);
+			
+		};
+	};
+</script>
+</head>
+
+<body style="height:3000px;">
+	<input type="button" value="回到顶部" id="btn" />
+</body>
+</html>
+
+
+
+
+
+
+

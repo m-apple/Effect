@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="" />
+<meta name="copyright" content="" />
+<title></title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	.clock{ width:400px; margin:0 auto;}
+	.clock p{ width:24px; height:35px; background:url(img/num.png); float:left;}
+	span{ float:left; line-height:35px; font-size:20px;}
+</style>
+<script src="move.js"></script>
+<script>
+	function toDub(num){
+		return num<10?'0'+num:''+num;
+	}
+
+	window.onload=function(){
+		var aP=document.getElementsByTagName('p');
+		clock();
+		setInterval(clock,1000);
+		
+		function clock(){
+			var oDate=new Date();
+			var oH=oDate.getHours();
+			var oM=oDate.getMinutes();
+			var oS=oDate.getSeconds();
+			
+			var str=toDub(oH)+toDub(oM)+toDub(oS);
+			
+			for(var i=0;i<aP.length;i++){
+				//aP[i].style.backgroundPosition='0 '+-str.charAt(i)*35+'px';
+				move(aP[i],{'backgroundPositionY':-str.charAt(i)*35});
+			}
+		}
+		
+	};
+</script>
+</head>
+
+<body>
+	<div class="clock">
+    	<p></p>
+        <p></p>
+        <span>:</span>
+        <p></p>
+        <p></p>
+        <span>:</span>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

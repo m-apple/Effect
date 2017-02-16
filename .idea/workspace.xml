@@ -2,50 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3573b5-28d7-4e9c-a37b-f69dc023f919" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/pic3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/images/shade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img2/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img3/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/img4/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/三角函数.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/zns_demo7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/3D轮换图/zns_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/doMove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/move.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/分块运动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/圆.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/官网效果展示-兼容低版本浏览器.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/苹果菜单.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move/鼠标跟随显示.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/img/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/img/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/img/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/img/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/img/num.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/数字时钟.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/数字运动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/运动框架.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/运动框架2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/move_1/返回顶部.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Effect.iws" />
@@ -218,7 +185,7 @@
       <updated>1487155536845</updated>
       <workItem from="1487155538506" duration="62000" />
       <workItem from="1487156141643" duration="483000" />
-      <workItem from="1487218848741" duration="1496000" />
+      <workItem from="1487218848741" duration="2082000" />
     </task>
     <task id="LOCAL-00001" summary="选择文件">
       <created>1487156503347</created>
@@ -234,11 +201,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487219664147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="运动效果的添加">
+      <created>1487220616776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487220616776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2041000" />
+    <option name="totallyTimeSpent" value="2627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -260,7 +234,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="选择文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="选择文件" />
+    <MESSAGE value="运动效果的添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="运动效果的添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
